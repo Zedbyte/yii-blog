@@ -120,15 +120,33 @@ class PostController extends Controller
 	 * Deletes a particular model.
 	 * If deletion is successful, the browser will be redirected to the 'admin' page.
 	 * @param integer $id the ID of the model to be deleted
+	 * 
+	 * TODOs (Modified)
+	 * 
 	 */
-	public function actionDelete($id)
-	{
-		$this->loadModel($id)->delete();
+	// public function actionDelete($id)
+	// {
+	// 	$this->loadModel($id)->delete();
 
-		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
-		if(!isset($_GET['ajax']))
-			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+	// 	// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
+	// 	if(!isset($_GET['ajax']))
+	// 		$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+	// }
+
+	public function actionDelete()
+	{
+		if(Yii::app()->request->isPostRequest)
+		{
+			// we only allow deletion via POST request
+			$this->loadModel()->delete();
+	
+			if(!isset($_GET['ajax']))
+				$this->redirect(array('index'));
+		}
+		else
+			throw new CHttpException(400,'Invalid request. Please do not repeat this request again.');
 	}
+
 
 	/**
 	 * Lists all models.
@@ -160,11 +178,14 @@ class PostController extends Controller
 
 	/**
 	 * Manages all models.
+	 * 
+	 * TODOs (Modified)
+	 * 
 	 */
 	public function actionAdmin()
 	{
 		$model=new Post('search');
-		$model->unsetAttributes();  // clear any default values
+		//$model->unsetAttributes();  // clear any default values (Removed)
 		if(isset($_GET['Post']))
 			$model->attributes=$_GET['Post'];
 
