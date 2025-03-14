@@ -23,9 +23,13 @@
 
 	<?php if(!Yii::app()->user->isGuest) $this->widget('UserMenu'); //Added ?>
 
-	<?php $this->widget('TagCloud', array(
-        'maxTags'=>Yii::app()->params['tagCloudCount'],
-    )); //Added ?>
+	<?php if($this->beginCache('tagCloud', array('duration'=>3600))) { ?>
+
+		<?php $this->widget('TagCloud', array(
+			'maxTags'=>Yii::app()->params['tagCloudCount'],
+		)); //Added ?>
+
+	<?php $this->endCache(); } ?>
 
 	<?php $this->widget('RecentComments', array(
         'maxComments'=>Yii::app()->params['recentCommentCount'],
