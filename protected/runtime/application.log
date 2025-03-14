@@ -33,3 +33,21 @@ Stack trace:
 REQUEST_URI=/index.php/post/admin
 HTTP_REFERER=http://localhost:8080/index.php/site/login
 ---
+2025/03/14 15:17:16 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "user". in C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('user')
+#1 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/user
+HTTP_REFERER=http://localhost:8080/index.php
+---
+2025/03/14 15:17:25 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "user". in C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('user')
+#1 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/user
+HTTP_REFERER=http://localhost:8080/index.php/comment
+---
