@@ -51,3 +51,15 @@ Stack trace:
 REQUEST_URI=/index.php/user
 HTTP_REFERER=http://localhost:8080/index.php/comment
 ---
+2025/03/14 16:13:35 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (258)
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (67)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/14 16:13:35 [warning] [application] Failed to set unsafe attribute "create_time" of "Comment".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (258)
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (67)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/14 16:13:35 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (258)
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (67)
+in C:\xampp\htdocs\yiiblog\index.php (13)

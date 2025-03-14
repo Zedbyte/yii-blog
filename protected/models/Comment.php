@@ -153,7 +153,7 @@ class Comment extends CActiveRecord
 
 	/**
 	 * 
-	 * TODOs (Added)
+	 * TODOs (Added) Chapter 4
 	 * 
 	 */
 
