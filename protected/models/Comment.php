@@ -18,6 +18,17 @@
  */
 class Comment extends CActiveRecord
 {
+
+	/**
+	 * 
+	 * TODOs (Added)
+	 * 
+	 */
+
+	const STATUS_PENDING=1;
+    const STATUS_APPROVED=2;
+
+
 	/**
 	 * @return string the associated database table name
 	 */
