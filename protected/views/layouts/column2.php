@@ -27,6 +27,10 @@
         'maxTags'=>Yii::app()->params['tagCloudCount'],
     )); //Added ?>
 
+	<?php $this->widget('RecentComments', array(
+        'maxComments'=>Yii::app()->params['recentCommentCount'],
+    )); //Added ?>
+
 	</div><!-- sidebar -->
 </div>
 <?php $this->endContent(); ?>

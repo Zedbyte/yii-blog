@@ -171,7 +171,16 @@ class Comment extends CActiveRecord
 
 	public function getPendingCommentCount()
 	{
-	$criteria = new CDbCriteria; $criteria->condition='status = 0';
-	return Comment::model()->count($criteria);
+		$criteria = new CDbCriteria; $criteria->condition='status = 0';
+		return Comment::model()->count($criteria);
 	}
+
+	public function findRecentComments($limit=10)
+    {
+        return $this->with('post')->findAll(array(
+            'condition'=>'t.status='.self::STATUS_APPROVED,
+            'order'=>'t.create_time DESC',
+            'limit'=>$limit,
+        ));
+    }
 }
