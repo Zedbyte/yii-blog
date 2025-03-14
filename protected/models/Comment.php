@@ -168,4 +168,10 @@ class Comment extends CActiveRecord
 		else
 			return false;
 	}
+
+	public function getPendingCommentCount()
+	{
+	$criteria = new CDbCriteria; $criteria->condition='status = 0';
+	return Comment::model()->count($criteria);
+	}
 }
