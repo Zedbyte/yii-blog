@@ -119,10 +119,26 @@ class CommentController extends Controller
 
 	/**
 	 * Lists all models.
+	 * 
+	 * TODOs (Modified)
+	 * 
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Comment');
+		$dataProvider=new CActiveDataProvider('Comment', array(
+			'criteria'=>array(
+				'with'=>'post',
+				'order'=>'t.status, t.create_time DESC',
+				/**
+				 * because both tbl_post and tbl_comment have columns status and create_time, we need to disambiguate the corresponding column 
+				 * reference by prefixing them with table alias names. As described in the guide, the alias for the primary table in a relational 
+				 * query is always t. Therefore, we are prefixing t to the status and create_time columns in the above code to indicate we want these 
+				 * values taken from the primary table, tbl_comment.
+				 * 
+				 */
+			),
+		));
+	
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
@@ -169,5 +185,29 @@ class CommentController extends Controller
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
 		}
+	}
+
+	/**
+	 * 
+	 * TODOs (Added) Chapter 4
+	 * 
+	 */
+
+	public function approve()
+	{
+		$this->status=Comment::STATUS_APPROVED;
+		$this->update(array('status'));
+	}
+
+	public function actionApprove()
+	{
+		if(Yii::app()->request->isPostRequest)
+		{
+			$comment=$this->loadModel();
+			$comment->approve();
+			$this->redirect(array('index'));
+		}
+		else
+			throw new CHttpException(400,'Invalid request...');
 	}
 }
