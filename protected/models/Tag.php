@@ -111,4 +111,19 @@ class Tag extends CActiveRecord
 	{
 		return implode(', ',$tags);
 	}
+
+	public function findTagWeights($maxTags=20)
+	{
+		$criteria = new CDbCriteria();
+		$criteria->limit = $maxTags;
+		$tags = Tag::model()->findAll($criteria);
+		$tagWeight = array();
+		foreach($tags as $tag)
+		{
+			$weight = $tag->frequency+8;
+			$weight = $weight>=12 ? 12 : $weight;
+			$tagWeight[$tag->name] = $weight;
+		}
+		return $tagWeight;
+	}
 }
