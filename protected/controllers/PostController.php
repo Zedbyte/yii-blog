@@ -2,6 +2,15 @@
 
 class PostController extends Controller
 {
+
+	/**
+	 * 
+	 * TODOs (Added)
+	 * 
+	 */
+	private $_model; //For loadModel() method
+
+
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
@@ -48,11 +57,15 @@ class PostController extends Controller
 	/**
 	 * Displays a particular model.
 	 * @param integer $id the ID of the model to be displayed
+	 * 
+	 * TODOs (Modified)
+	 * 
 	 */
-	public function actionView($id)
+	public function actionView()
 	{
+		$post=$this->loadModel();
 		$this->render('view',array(
-			'model'=>$this->loadModel($id),
+			'model'=>$post,
 		));
 	}
 
@@ -119,10 +132,27 @@ class PostController extends Controller
 
 	/**
 	 * Lists all models.
+	 * 
+	 * TODOs (Modified)
+	 * 
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Post');
+		$criteria=new CDbCriteria(array(
+			'condition'=>'status='.Post::STATUS_PUBLISHED,
+			'order'=>'update_time DESC',
+			'with'=>'commentCount',
+		));
+		if(isset($_GET['tag']))
+			$criteria->addSearchCondition('tags',$_GET['tag']);
+	
+		$dataProvider=new CActiveDataProvider('Post', array(
+			'pagination'=>array(
+				'pageSize'=>5,
+			),
+			'criteria'=>$criteria,
+		));
+	
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
@@ -149,13 +179,28 @@ class PostController extends Controller
 	 * @param integer $id the ID of the model to be loaded
 	 * @return Post the loaded model
 	 * @throws CHttpException
+	 * 
+	 * 
+	 * TODOs (Modified)
+	 * 
 	 */
-	public function loadModel($id)
+	public function loadModel()
 	{
-		$model=Post::model()->findByPk($id);
-		if($model===null)
-			throw new CHttpException(404,'The requested page does not exist.');
-		return $model;
+		if($this->_model===null)
+		{
+			if(isset($_GET['id']))
+			{
+				if(Yii::app()->user->isGuest)
+					$condition='status='.Post::STATUS_PUBLISHED
+						.' OR status='.Post::STATUS_ARCHIVED;
+				else
+					$condition='';
+				$this->_model=Post::model()->findByPk($_GET['id'], $condition);
+			}
+			if($this->_model===null)
+				throw new CHttpException(404,'The requested page does not exist.');
+		}
+		return $this->_model;
 	}
 
 	/**
