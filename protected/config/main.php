@@ -81,6 +81,7 @@ return array(
 	'params'=>array(
 		// this is used in contact page
 		'adminEmail'=>'santos.markjerome@auf.edu.ph',
-		'tagCloudCount'=>20
+		'commentNeedApproval'=>true,
+		'tagCloudCount'=>20,
 	),
 );

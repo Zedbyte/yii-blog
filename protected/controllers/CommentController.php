@@ -196,7 +196,8 @@ class CommentController extends Controller
 	public function approve()
 	{
 		$this->status=Comment::STATUS_APPROVED;
-		$this->update(array('status'));
+		$this->update(array('status')); 
+		// A comment says this should be $this->save();
 	}
 
 	public function actionApprove()
