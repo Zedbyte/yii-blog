@@ -4,7 +4,7 @@
 $this->pageTitle=Yii::app()->name;
 ?>
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full h-full flex items-center text-center px-10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full h-full items-center text-center px-10">
     <!-- Left Column: Text and Button -->
     <div class="text-left space-y-6 md:space-y-8 lg:space-y-10">
         <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-9xl font-bold text-black text-nowrap font-rampart">

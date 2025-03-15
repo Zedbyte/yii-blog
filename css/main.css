@@ -12,6 +12,10 @@
 
 body {
     font-family: "Inter", sans-serif;
+    background-image: url("../images/noise-dark.png");
+    background-repeat: repeat; /* Makes the noise pattern repeat */
+    background-size: auto; /* Keeps the original noise texture size */
+    background-blend-mode: overlay;
 }
 
 #content {
