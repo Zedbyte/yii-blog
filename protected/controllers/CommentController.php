@@ -1,7 +1,7 @@
 <?php
 
 class CommentController extends Controller
-{
+{	
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
@@ -32,7 +32,7 @@ class CommentController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
+				'actions'=>array('create','update', 'approve'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -192,19 +192,11 @@ class CommentController extends Controller
 	 * TODOs (Added) Chapter 4
 	 * 
 	 */
-
-	public function approve()
-	{
-		$this->status=Comment::STATUS_APPROVED;
-		$this->update(array('status')); 
-		// A comment says this should be $this->save();
-	}
-
-	public function actionApprove()
+	public function actionApprove($id)
 	{
 		if(Yii::app()->request->isPostRequest)
 		{
-			$comment=$this->loadModel();
+			$comment=$this->loadModel($id);
 			$comment->approve();
 			$this->redirect(array('index'));
 		}

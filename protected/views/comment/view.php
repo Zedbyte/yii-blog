@@ -31,3 +31,25 @@ $this->menu=array(
 		'post_id',
 	),
 )); ?>
+
+<div class="comment">
+    <div class="comment-header">
+        <strong><?php echo CHtml::encode($model->author); ?></strong> 
+        on <?php echo date('F j, Y, g:i a', strtotime($model->create_time)); ?>
+    </div>
+
+    <div class="comment-content">
+        <?php echo CHtml::encode($model->content); ?>
+    </div>
+
+    <div class="comment-actions">
+        <?php if($model->status == Comment::STATUS_PENDING): ?>
+            <span class="pending-label">Pending Approval</span>
+            <?php echo CHtml::form(array('comment/approve', 'id' => $model->id), 'post'); ?>
+                <?php echo CHtml::submitButton('Approve', array('confirm' => 'Are you sure you want to approve this comment?')); ?>
+            <?php echo CHtml::endForm(); ?>
+        <?php else: ?>
+            <span class="approved-label">Approved</span>
+        <?php endif; ?>
+    </div>
+</div>

@@ -966,3 +966,742 @@ in C:\xampp\htdocs\yiiblog\index.php (13)
 in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (258)
 in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (67)
 in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/15 13:15:20 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (258)
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (67)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/15 13:15:20 [warning] [application] Failed to set unsafe attribute "create_time" of "Comment".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (258)
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (67)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/15 13:15:20 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (258)
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (67)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/15 13:15:21 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (258)
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (67)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/15 13:15:21 [warning] [application] Failed to set unsafe attribute "create_time" of "Comment".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (258)
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (67)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/15 13:15:21 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (258)
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (67)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/15 13:15:22 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (258)
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (67)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/15 13:15:22 [warning] [application] Failed to set unsafe attribute "create_time" of "Comment".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (258)
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (67)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/15 13:15:22 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (258)
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (67)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/15 13:15:26 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (258)
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (67)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/15 13:15:26 [warning] [application] Failed to set unsafe attribute "create_time" of "Comment".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (258)
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (67)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/15 13:15:26 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (258)
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (67)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/15 13:15:26 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (264)
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (67)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/15 13:15:26 [warning] [application] Failed to set unsafe attribute "create_time" of "Comment".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (264)
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (67)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/15 13:15:26 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (264)
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (67)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/15 13:15:43 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in C:\xampp\htdocs\yiiblog\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('approve')
+#8 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('comment/approve')
+#9 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/comment/approve/4
+HTTP_REFERER=http://localhost:8080/comment/4
+---
+2025/03/15 13:15:50 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in C:\xampp\htdocs\yiiblog\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('approve')
+#8 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('comment/approve')
+#9 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/comment/approve/4
+HTTP_REFERER=http://localhost:8080/comment/4
+---
+2025/03/15 13:17:22 [error] [exception.ArgumentCountError] ArgumentCountError: Too few arguments to function CommentController::loadModel(), 0 passed in C:\xampp\htdocs\yiiblog\protected\controllers\CommentController.php on line 207 and exactly 1 expected in C:\xampp\htdocs\yiiblog\protected\controllers\CommentController.php:169
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\protected\controllers\CommentController.php(207): CommentController->loadModel()
+#1 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): CommentController->actionApprove()
+#2 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('approve')
+#11 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('comment/approve')
+#12 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/comment/approve/4
+HTTP_REFERER=http://localhost:8080/comment/4
+---
+2025/03/15 13:20:14 [error] [exception.CException] CException: Property "CommentController._model" is not defined. in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\protected\controllers\CommentController.php(171): CComponent->__get('_model')
+#1 C:\xampp\htdocs\yiiblog\protected\controllers\CommentController.php(55): CommentController->loadModel('4')
+#2 [internal function]: CommentController->actionView('4')
+#3 C:\xampp\htdocs\yiiblog\framework\web\actions\CAction.php(114): ReflectionMethod->invokeArgs(Object(CommentController), Array)
+#4 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CommentController), Object(ReflectionMethod), Array)
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('view')
+#14 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('comment/view')
+#15 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/comment/4
+HTTP_REFERER=http://localhost:8080/comment/index
+---
+2025/03/15 13:20:15 [error] [exception.CException] CException: Property "CommentController._model" is not defined. in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\protected\controllers\CommentController.php(171): CComponent->__get('_model')
+#1 C:\xampp\htdocs\yiiblog\protected\controllers\CommentController.php(55): CommentController->loadModel('4')
+#2 [internal function]: CommentController->actionView('4')
+#3 C:\xampp\htdocs\yiiblog\framework\web\actions\CAction.php(114): ReflectionMethod->invokeArgs(Object(CommentController), Array)
+#4 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CommentController), Object(ReflectionMethod), Array)
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('view')
+#14 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('comment/view')
+#15 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/comment/4
+HTTP_REFERER=http://localhost:8080/comment/index
+---
+2025/03/15 13:20:18 [error] [exception.CException] CException: Property "CommentController._model" is not defined. in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\protected\controllers\CommentController.php(171): CComponent->__get('_model')
+#1 C:\xampp\htdocs\yiiblog\protected\controllers\CommentController.php(55): CommentController->loadModel('4')
+#2 [internal function]: CommentController->actionView('4')
+#3 C:\xampp\htdocs\yiiblog\framework\web\actions\CAction.php(114): ReflectionMethod->invokeArgs(Object(CommentController), Array)
+#4 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CommentController), Object(ReflectionMethod), Array)
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('view')
+#14 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('comment/view')
+#15 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/comment/4
+HTTP_REFERER=http://localhost:8080/comment/index
+---
+2025/03/15 13:20:47 [error] [exception.CException] CException: Comment and its behaviors do not have a method or closure named "approve". in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:264
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(229): CComponent->__call('approve', Array)
+#1 C:\xampp\htdocs\yiiblog\protected\controllers\CommentController.php(226): CActiveRecord->__call('approve', Array)
+#2 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): CommentController->actionApprove()
+#3 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('approve')
+#12 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('comment/approve')
+#13 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/comment/approve/4
+HTTP_REFERER=http://localhost:8080/comment/4
+---
+2025/03/15 13:26:56 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in C:\xampp\htdocs\yiiblog\protected\controllers\CommentController.php:190
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\protected\controllers\CommentController.php(62): CommentController->loadModel('4')
+#1 [internal function]: CommentController->actionView('4')
+#2 C:\xampp\htdocs\yiiblog\framework\web\actions\CAction.php(114): ReflectionMethod->invokeArgs(Object(CommentController), Array)
+#3 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CommentController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('comment/view')
+#14 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/comment/4
+HTTP_REFERER=http://localhost:8080/comment/index
+---
+2025/03/15 13:27:41 [error] [exception.CException] CException: Comment and its behaviors do not have a method or closure named "approve". in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:264
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(229): CComponent->__call('approve', Array)
+#1 C:\xampp\htdocs\yiiblog\protected\controllers\CommentController.php(226): CActiveRecord->__call('approve', Array)
+#2 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): CommentController->actionApprove()
+#3 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('approve')
+#12 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('comment/approve')
+#13 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/comment/approve/4
+HTTP_REFERER=http://localhost:8080/comment/4
+---
+2025/03/15 13:30:20 [error] [exception.CException] CException: Comment and its behaviors do not have a method or closure named "approve". in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:264
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(229): CComponent->__call('approve', Array)
+#1 C:\xampp\htdocs\yiiblog\protected\controllers\CommentController.php(231): CActiveRecord->__call('approve', Array)
+#2 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): CommentController->actionApprove()
+#3 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('approve')
+#12 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('comment/approve')
+#13 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/comment/approve/4
+HTTP_REFERER=http://localhost:8080/comment/4
+---
+2025/03/15 13:47:29 [error] [exception.CException] CException: RecentComments and its behaviors do not have a method or closure named "findRecentComments". in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:264
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\protected\components\views\recentComments.php(2): CComponent->__call('findRecentComme...', Array)
+#1 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(130): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', NULL, false)
+#3 C:\xampp\htdocs\yiiblog\framework\web\widgets\CWidget.php(244): CBaseController->renderFile('C:\\xampp\\htdocs...', NULL, false)
+#4 C:\xampp\htdocs\yiiblog\protected\components\RecentComments.php(17): CWidget->render('recentComments')
+#5 C:\xampp\htdocs\yiiblog\framework\zii\widgets\CPortlet.php(97): RecentComments->renderContent()
+#6 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(182): CPortlet->run()
+#7 C:\xampp\htdocs\yiiblog\protected\views\layouts\column2.php(34): CBaseController->widget('RecentComments', Array)
+#8 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#10 C:\xampp\htdocs\yiiblog\framework\web\CController.php(787): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#11 C:\xampp\htdocs\yiiblog\protected\controllers\CommentController.php(149): CController->render('index', Array)
+#12 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): CommentController->actionIndex()
+#13 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#15 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#17 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#19 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#20 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('')
+#22 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('comment')
+#23 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#24 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/comment
+HTTP_REFERER=http://localhost:8080/comment/index
+---
+2025/03/15 13:52:23 [error] [php] Array to string conversion (C:\xampp\htdocs\yiiblog\protected\components\RecentComments.php:18)
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\zii\widgets\CPortlet.php(97): RecentComments->renderContent()
+#1 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(182): RecentComments->run()
+#2 C:\xampp\htdocs\yiiblog\protected\views\layouts\column2.php(34): CommentController->widget()
+#3 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require()
+#4 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CommentController->renderInternal()
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(787): CommentController->renderFile()
+#6 C:\xampp\htdocs\yiiblog\protected\controllers\CommentController.php(149): CommentController->render()
+#7 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): CommentController->actionIndex()
+#8 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CommentController->runAction()
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#12 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CommentController->filterAccessControl()
+#13 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#14 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CommentController->runActionWithFilters()
+#16 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CommentController->run()
+#17 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\yiiblog\index.php(13): CWebApplication->run()
+REQUEST_URI=/comment
+in C:\xampp\htdocs\yiiblog\protected\components\RecentComments.php (18)
+in C:\xampp\htdocs\yiiblog\protected\views\layouts\column2.php (34)
+in C:\xampp\htdocs\yiiblog\protected\controllers\CommentController.php (149)
+2025/03/15 13:54:29 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (258)
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (67)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/15 13:54:29 [warning] [application] Failed to set unsafe attribute "create_time" of "Comment".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (258)
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (67)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/15 13:54:29 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (258)
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (67)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/15 13:54:31 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (258)
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (67)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/15 13:54:31 [warning] [application] Failed to set unsafe attribute "create_time" of "Comment".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (258)
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (67)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/15 13:54:31 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (258)
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (67)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/15 13:54:33 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (264)
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (67)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/15 13:54:33 [warning] [application] Failed to set unsafe attribute "create_time" of "Comment".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (264)
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (67)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/15 13:54:33 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (264)
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (67)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/15 14:00:05 [error] [php] Undefined variable $model (C:\xampp\htdocs\yiiblog\protected\views\post\_comments.php:10)
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): PostController->renderInternal()
+#2 C:\xampp\htdocs\yiiblog\framework\web\CController.php(872): PostController->renderFile()
+#3 C:\xampp\htdocs\yiiblog\protected\views\post\view.php(42): PostController->renderPartial()
+#4 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require()
+#5 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): PostController->renderInternal()
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(872): PostController->renderFile()
+#7 C:\xampp\htdocs\yiiblog\framework\web\CController.php(785): PostController->renderPartial()
+#8 C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php(69): PostController->render()
+#9 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): PostController->actionView()
+#10 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#12 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#14 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#15 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#16 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): PostController->runActionWithFilters()
+#18 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): PostController->run()
+#19 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\yiiblog\index.php(13): CWebApplication->run()
+REQUEST_URI=/post/5
+in C:\xampp\htdocs\yiiblog\protected\views\post\_comments.php (10)
+in C:\xampp\htdocs\yiiblog\protected\views\post\view.php (42)
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (69)
+2025/03/15 14:00:40 [error] [php] Undefined variable $model (C:\xampp\htdocs\yiiblog\protected\views\post\_comments.php:12)
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): PostController->renderInternal()
+#2 C:\xampp\htdocs\yiiblog\framework\web\CController.php(872): PostController->renderFile()
+#3 C:\xampp\htdocs\yiiblog\protected\views\post\view.php(42): PostController->renderPartial()
+#4 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require()
+#5 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): PostController->renderInternal()
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(872): PostController->renderFile()
+#7 C:\xampp\htdocs\yiiblog\framework\web\CController.php(785): PostController->renderPartial()
+#8 C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php(69): PostController->render()
+#9 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): PostController->actionView()
+#10 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#12 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#14 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#15 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#16 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): PostController->runActionWithFilters()
+#18 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): PostController->run()
+#19 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\yiiblog\index.php(13): CWebApplication->run()
+REQUEST_URI=/post/5
+in C:\xampp\htdocs\yiiblog\protected\views\post\_comments.php (12)
+in C:\xampp\htdocs\yiiblog\protected\views\post\view.php (42)
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (69)
+2025/03/15 14:03:47 [error] [php] foreach() argument must be of type array|object, null given (C:\xampp\htdocs\yiiblog\protected\components\views\recentComments.php:2)
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(130): require()
+#1 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): RecentComments->renderInternal()
+#2 C:\xampp\htdocs\yiiblog\framework\web\widgets\CWidget.php(244): RecentComments->renderFile()
+#3 C:\xampp\htdocs\yiiblog\protected\components\RecentComments.php(17): RecentComments->render()
+#4 C:\xampp\htdocs\yiiblog\framework\zii\widgets\CPortlet.php(97): RecentComments->renderContent()
+#5 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(182): RecentComments->run()
+#6 C:\xampp\htdocs\yiiblog\protected\views\layouts\column2.php(34): PostController->widget()
+#7 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require()
+#8 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): PostController->renderInternal()
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(787): PostController->renderFile()
+#10 C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php(69): PostController->render()
+#11 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): PostController->actionView()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams()
+#13 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#14 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#16 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#17 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#18 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): PostController->runActionWithFilters()
+#20 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): PostController->run()
+#21 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#22 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\yiiblog\index.php(13): CWebApplication->run()
+REQUEST_URI=/post/5
+in C:\xampp\htdocs\yiiblog\protected\components\views\recentComments.php (2)
+in C:\xampp\htdocs\yiiblog\protected\components\RecentComments.php (17)
+in C:\xampp\htdocs\yiiblog\protected\views\layouts\column2.php (34)
+2025/03/15 14:11:25 [error] [exception.CException] CException: Property "Comment.authorLink" is not defined. in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(145): CComponent->__get('authorLink')
+#1 C:\xampp\htdocs\yiiblog\protected\components\views\recentComments.php(3): CActiveRecord->__get('authorLink')
+#2 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(130): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', NULL, false)
+#4 C:\xampp\htdocs\yiiblog\framework\web\widgets\CWidget.php(244): CBaseController->renderFile('C:\\xampp\\htdocs...', NULL, false)
+#5 C:\xampp\htdocs\yiiblog\protected\components\RecentComments.php(17): CWidget->render('recentComments')
+#6 C:\xampp\htdocs\yiiblog\framework\zii\widgets\CPortlet.php(97): RecentComments->renderContent()
+#7 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(182): CPortlet->run()
+#8 C:\xampp\htdocs\yiiblog\protected\views\layouts\column2.php(34): CBaseController->widget('RecentComments', Array)
+#9 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#11 C:\xampp\htdocs\yiiblog\framework\web\CController.php(787): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php(69): CController->render('view', Array)
+#13 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): PostController->actionView()
+#14 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#18 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#21 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('view')
+#23 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('post/view')
+#24 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#25 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/post/5
+HTTP_REFERER=http://localhost:8080/post
+---
+2025/03/15 14:11:45 [error] [exception.Error] Error: Object of class Comment could not be converted to string in C:\xampp\htdocs\yiiblog\protected\components\views\recentComments.php:3
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(130): require()
+#1 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', NULL, false)
+#2 C:\xampp\htdocs\yiiblog\framework\web\widgets\CWidget.php(244): CBaseController->renderFile('C:\\xampp\\htdocs...', NULL, false)
+#3 C:\xampp\htdocs\yiiblog\protected\components\RecentComments.php(17): CWidget->render('recentComments')
+#4 C:\xampp\htdocs\yiiblog\framework\zii\widgets\CPortlet.php(97): RecentComments->renderContent()
+#5 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(182): CPortlet->run()
+#6 C:\xampp\htdocs\yiiblog\protected\views\layouts\column2.php(34): CBaseController->widget('RecentComments', Array)
+#7 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(787): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#10 C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php(69): CController->render('view', Array)
+#11 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): PostController->actionView()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('view')
+#21 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('post/view')
+#22 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/post/5
+HTTP_REFERER=http://localhost:8080/post
+---
+2025/03/15 14:12:00 [error] [exception.CException] CException: Property "Comment.name" is not defined. in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(145): CComponent->__get('name')
+#1 C:\xampp\htdocs\yiiblog\protected\components\views\recentComments.php(3): CActiveRecord->__get('name')
+#2 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(130): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', NULL, false)
+#4 C:\xampp\htdocs\yiiblog\framework\web\widgets\CWidget.php(244): CBaseController->renderFile('C:\\xampp\\htdocs...', NULL, false)
+#5 C:\xampp\htdocs\yiiblog\protected\components\RecentComments.php(17): CWidget->render('recentComments')
+#6 C:\xampp\htdocs\yiiblog\framework\zii\widgets\CPortlet.php(97): RecentComments->renderContent()
+#7 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(182): CPortlet->run()
+#8 C:\xampp\htdocs\yiiblog\protected\views\layouts\column2.php(34): CBaseController->widget('RecentComments', Array)
+#9 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#11 C:\xampp\htdocs\yiiblog\framework\web\CController.php(787): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php(69): CController->render('view', Array)
+#13 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): PostController->actionView()
+#14 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#18 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#21 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('view')
+#23 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('post/view')
+#24 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#25 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/post/5
+HTTP_REFERER=http://localhost:8080/post
+---
+2025/03/15 14:12:11 [error] [exception.CException] CException: Comment and its behaviors do not have a method or closure named "getUrl". in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:264
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(229): CComponent->__call('getUrl', Array)
+#1 C:\xampp\htdocs\yiiblog\protected\components\views\recentComments.php(4): CActiveRecord->__call('getUrl', Array)
+#2 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(130): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', NULL, false)
+#4 C:\xampp\htdocs\yiiblog\framework\web\widgets\CWidget.php(244): CBaseController->renderFile('C:\\xampp\\htdocs...', NULL, false)
+#5 C:\xampp\htdocs\yiiblog\protected\components\RecentComments.php(17): CWidget->render('recentComments')
+#6 C:\xampp\htdocs\yiiblog\framework\zii\widgets\CPortlet.php(97): RecentComments->renderContent()
+#7 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(182): CPortlet->run()
+#8 C:\xampp\htdocs\yiiblog\protected\views\layouts\column2.php(34): CBaseController->widget('RecentComments', Array)
+#9 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#11 C:\xampp\htdocs\yiiblog\framework\web\CController.php(787): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php(69): CController->render('view', Array)
+#13 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): PostController->actionView()
+#14 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#18 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#21 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('view')
+#23 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('post/view')
+#24 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#25 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/post/5
+HTTP_REFERER=http://localhost:8080/post
+---
+2025/03/15 14:12:11 [error] [exception.CException] CException: Comment and its behaviors do not have a method or closure named "getUrl". in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:264
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(229): CComponent->__call('getUrl', Array)
+#1 C:\xampp\htdocs\yiiblog\protected\components\views\recentComments.php(4): CActiveRecord->__call('getUrl', Array)
+#2 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(130): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', NULL, false)
+#4 C:\xampp\htdocs\yiiblog\framework\web\widgets\CWidget.php(244): CBaseController->renderFile('C:\\xampp\\htdocs...', NULL, false)
+#5 C:\xampp\htdocs\yiiblog\protected\components\RecentComments.php(17): CWidget->render('recentComments')
+#6 C:\xampp\htdocs\yiiblog\framework\zii\widgets\CPortlet.php(97): RecentComments->renderContent()
+#7 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(182): CPortlet->run()
+#8 C:\xampp\htdocs\yiiblog\protected\views\layouts\column2.php(34): CBaseController->widget('RecentComments', Array)
+#9 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#11 C:\xampp\htdocs\yiiblog\framework\web\CController.php(787): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php(69): CController->render('view', Array)
+#13 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): PostController->actionView()
+#14 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#18 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#21 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('view')
+#23 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('post/view')
+#24 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#25 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/post/5
+HTTP_REFERER=http://localhost:8080/post
+---
+2025/03/15 14:17:39 [error] [exception.Error] Error: Undefined constant "maxComments" in C:\xampp\htdocs\yiiblog\protected\components\RecentComments.php:12
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\protected\components\views\recentComments.php(2): RecentComments->getRecentComments()
+#1 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(130): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', NULL, false)
+#3 C:\xampp\htdocs\yiiblog\framework\web\widgets\CWidget.php(244): CBaseController->renderFile('C:\\xampp\\htdocs...', NULL, false)
+#4 C:\xampp\htdocs\yiiblog\protected\components\RecentComments.php(18): CWidget->render('recentComments')
+#5 C:\xampp\htdocs\yiiblog\framework\zii\widgets\CPortlet.php(97): RecentComments->renderContent()
+#6 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(182): CPortlet->run()
+#7 C:\xampp\htdocs\yiiblog\protected\views\layouts\column2.php(34): CBaseController->widget('RecentComments', Array)
+#8 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#10 C:\xampp\htdocs\yiiblog\framework\web\CController.php(787): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#11 C:\xampp\htdocs\yiiblog\protected\controllers\CommentController.php(149): CController->render('index', Array)
+#12 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): CommentController->actionIndex()
+#13 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#15 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#17 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#19 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#20 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('')
+#22 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('comment')
+#23 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#24 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/comment
+HTTP_REFERER=http://localhost:8080/post
+---
+2025/03/15 14:27:13 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (258)
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (67)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/15 14:27:13 [warning] [application] Failed to set unsafe attribute "create_time" of "Comment".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (258)
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (67)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/15 14:27:13 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (258)
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (67)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/15 14:27:15 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (258)
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (67)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/15 14:27:15 [warning] [application] Failed to set unsafe attribute "create_time" of "Comment".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (258)
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (67)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/15 14:27:15 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (258)
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (67)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/15 14:27:15 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (264)
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (67)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/15 14:27:15 [warning] [application] Failed to set unsafe attribute "create_time" of "Comment".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (264)
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (67)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/15 14:27:15 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (264)
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (67)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/15 14:33:42 [error] [exception.CException] CException: UserMenu and its behaviors do not have a method or closure named "getPendingCommentCount". in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:264
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\protected\components\views\userMenu.php(5): CComponent->__call('getPendingComme...', Array)
+#1 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(130): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', NULL, false)
+#3 C:\xampp\htdocs\yiiblog\framework\web\widgets\CWidget.php(244): CBaseController->renderFile('C:\\xampp\\htdocs...', NULL, false)
+#4 C:\xampp\htdocs\yiiblog\protected\components\UserMenu.php(15): CWidget->render('userMenu')
+#5 C:\xampp\htdocs\yiiblog\framework\zii\widgets\CPortlet.php(97): UserMenu->renderContent()
+#6 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(182): CPortlet->run()
+#7 C:\xampp\htdocs\yiiblog\protected\views\layouts\column2.php(24): CBaseController->widget('UserMenu')
+#8 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#10 C:\xampp\htdocs\yiiblog\framework\web\CController.php(787): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#11 C:\xampp\htdocs\yiiblog\protected\controllers\CommentController.php(142): CController->render('index', Array)
+#12 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): CommentController->actionIndex()
+#13 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#15 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#17 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#19 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#20 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('index')
+#22 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('comment/index')
+#23 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#24 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/comment/index
+HTTP_REFERER=http://localhost:8080/post/5
+---
+2025/03/15 14:35:27 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (258)
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (67)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/15 14:35:27 [warning] [application] Failed to set unsafe attribute "create_time" of "Comment".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (258)
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (67)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/15 14:35:27 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (258)
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (67)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/15 14:35:28 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (258)
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (67)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/15 14:35:28 [warning] [application] Failed to set unsafe attribute "create_time" of "Comment".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (258)
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (67)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/15 14:35:28 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (258)
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (67)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/15 14:35:28 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (264)
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (67)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/15 14:35:28 [warning] [application] Failed to set unsafe attribute "create_time" of "Comment".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (264)
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (67)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/15 14:35:28 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (264)
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (67)
+in C:\xampp\htdocs\yiiblog\index.php (13)

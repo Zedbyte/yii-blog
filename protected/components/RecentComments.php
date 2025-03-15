@@ -8,7 +8,7 @@ class RecentComments extends CPortlet
     public $maxComments=10;
 
     public function getRecentComments()
-    {
+    {   
         return Comment::model()->findRecentComments($this->maxComments);
     }
 

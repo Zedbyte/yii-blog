@@ -169,18 +169,33 @@ class Comment extends CActiveRecord
 			return false;
 	}
 
+	public function getUrl()
+    {
+        return Yii::app()->createUrl('comment/view', array(
+            'id'=>$this->id,
+        ));
+    }
+
+	
+	public function approve()
+	{
+		$this->status=Comment::STATUS_APPROVED;
+		$this->update(array('status')); 
+		// A comment says this should be $this->save();
+	}
+
 	public function getPendingCommentCount()
 	{
-		$criteria = new CDbCriteria; $criteria->condition='status = 0';
-		return Comment::model()->count($criteria);
+		return $this->count('status='.self::STATUS_PENDING);
 	}
 
 	public function findRecentComments($limit=10)
-    {
+    {	
         return $this->with('post')->findAll(array(
             'condition'=>'t.status='.self::STATUS_APPROVED,
             'order'=>'t.create_time DESC',
             'limit'=>$limit,
         ));
+		
     }
 }
