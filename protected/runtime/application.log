@@ -1855,3 +1855,25 @@ Stack trace:
 #10 {main}
 REQUEST_URI=/
 ---
+2025/03/15 16:41:12 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "protected". in C:\xampp\htdocs\yiiblog\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\web\CController.php(270): CController->missingAction('protected')
+#1 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('protected')
+#2 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('site/protected/...')
+#3 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/protected/css
+HTTP_REFERER=http://localhost:8080/site/index
+---
+2025/03/15 16:41:13 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "protected". in C:\xampp\htdocs\yiiblog\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\web\CController.php(270): CController->missingAction('protected')
+#1 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('protected')
+#2 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('site/protected/...')
+#3 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/protected/css
+HTTP_REFERER=http://localhost:8080/site/index
+---

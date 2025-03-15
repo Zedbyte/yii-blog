@@ -4,20 +4,27 @@
 $this->pageTitle=Yii::app()->name;
 ?>
 
-
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center w-full h-full text-center px-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full h-full flex items-center text-center px-10">
     <!-- Left Column: Text and Button -->
-    <div class="text-left">
-        <h1 class="text-[] font-bold text-white mb-4">The Social Network</h1>
-        <p class="text-lg text-gray-300 mb-6">A place to read, write, and deepen your understanding.</p>
-        <a href="#" class="bg-blue-600 text-white px-6 py-3 rounded-full text-lg hover:bg-blue-500 transition">Start Reading</a>
+    <div class="text-left space-y-6 md:space-y-8 lg:space-y-10">
+        <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-9xl font-bold text-black text-nowrap font-rampart">
+            Angeles<br />Secret Files
+        </h1>
+        <p class="text-lg sm:text-xl md:text-2xl text-gray-900 font-playpen">
+            A place to read, write, and deepen your understanding.
+        </p>
+        <a href="#" class="bg-stone-900 text-white px-6 sm:px-8 md:px-10 py-2 sm:py-3 rounded-full text-base sm:text-lg md:text-xl 
+            hover:bg-gray-700 transition font-semibold">
+            Start Reading
+        </a>
     </div>
+
     
     <!-- Right Column: SVG Placeholder -->
-    <div class="flex justify-center">
-        <svg class="w-80 h-80 text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15v-6H8v6h2zm4 0v-6h-2v6h2zm4 0v-6h-2v6h2z" />
-        </svg>
+    <div class="flex justify-center h-full items-center">
+    <img src="protected/assets/online_discussion.svg" 
+            alt="Random Thoughts" 
+            class="w-[25em] md:w-[40em] lg:w-[60em] max-w-full h-auto object-contain">
     </div>
 </div>
 
