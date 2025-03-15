@@ -82,6 +82,7 @@ return array(
 	'params'=>array(
 		// this is used in contact page
 		'adminEmail'=>'santos.markjerome@auf.edu.ph',
+		'defaultController'=>'post',
 		'commentNeedApproval'=>true,
 		'tagCloudCount'=>20,
 		'recentCommentCount'=>10,
