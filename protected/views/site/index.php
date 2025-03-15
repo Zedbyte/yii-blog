@@ -22,7 +22,7 @@ $this->pageTitle=Yii::app()->name;
     
     <!-- Right Column: SVG Placeholder -->
     <div class="flex justify-center h-full items-center">
-    <img src="protected/assets/online_discussion.svg" 
+    <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/online_discussion.svg" 
             alt="Random Thoughts" 
             class="w-[25em] md:w-[40em] lg:w-[60em] max-w-full h-auto object-contain">
     </div>
