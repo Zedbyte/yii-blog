@@ -23,6 +23,7 @@
     --color-blue-500: oklch(0.623 0.214 259.815);
     --color-blue-600: oklch(0.546 0.245 262.881);
     --color-blue-700: oklch(0.488 0.243 264.376);
+    --color-blue-800: oklch(0.424 0.199 265.638);
     --color-gray-100: oklch(0.967 0.003 264.542);
     --color-gray-200: oklch(0.928 0.006 264.531);
     --color-gray-300: oklch(0.872 0.01 258.338);
@@ -1536,6 +1537,9 @@
   .bg-green-500 {
     background-color: var(--color-green-500);
   }
+  .bg-green-600 {
+    background-color: var(--color-green-600);
+  }
   .bg-red-100 {
     background-color: var(--color-red-100);
   }
@@ -1547,6 +1551,9 @@
   }
   .bg-red-500\/\[50\%\] {
     background-color: color-mix(in oklab, var(--color-red-500) 50%, transparent);
+  }
+  .bg-red-600 {
+    background-color: var(--color-red-600);
   }
   .bg-stone-600 {
     background-color: var(--color-stone-600);
@@ -2593,10 +2600,24 @@
       }
     }
   }
+  .hover\:bg-green-700 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-green-700);
+      }
+    }
+  }
   .hover\:bg-red-600 {
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-red-600);
+      }
+    }
+  }
+  .hover\:bg-red-700 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-red-700);
       }
     }
   }
@@ -2653,6 +2674,13 @@
     &:hover {
       @media (hover: hover) {
         color: var(--color-blue-700);
+      }
+    }
+  }
+  .hover\:text-blue-800 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-blue-800);
       }
     }
   }
