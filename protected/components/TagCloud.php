@@ -11,13 +11,19 @@ class TagCloud extends CPortlet
     {
         $tags=Tag::model()->findTagWeights($this->maxTags);
 
-        foreach($tags as $tag=>$weight)
-        {
-            $link=CHtml::link(CHtml::encode($tag), array('post/index','tag'=>$tag));
+        echo '<div class="flex flex-wrap gap-2">'; // Flexbox container for better spacing
+        foreach ($tags as $tag => $weight) {
+            $link = CHtml::link(
+                CHtml::encode($tag),
+                array('post/index', 'tag' => $tag),
+                array('class' => 'hover:text-white') // Hover effect
+            );
+
             echo CHtml::tag('span', array(
-                'class'=>'tag',
-                'style'=>"font-size:{$weight}pt",
-            ), $link)."\n";
+                'class' => 'px-3 py-1 rounded-full transition-all hover:bg-stone-500 hover:text-gray-200',
+                'style' => "font-size: 11px; background-color: rgba(68,64,60, 1); color: #fff;", // Blue-tinted background
+            ), $link) . "\n";
         }
+        echo '</div>';
     }
 }

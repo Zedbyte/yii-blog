@@ -12,11 +12,9 @@ $this->menu=array(
 );
 ?>
 
-<h1>Posts</h1>
-
 <!-- TODOs (Added) -->
 <?php if(!empty($_GET['tag'])): ?>
-<h1>Posts Tagged with <i><?php echo CHtml::encode($_GET['tag']); ?></i></h1>
+<h1 class="text-lg py-5 font-semibold">Posts Tagged with <span class="font-bold text-blue-500 italic"><?php echo CHtml::encode($_GET['tag']); ?></span></h1>
 <?php endif; ?>
 
 <!-- TODOs (Modified) -->

@@ -11,7 +11,7 @@ $this->pageTitle=Yii::app()->name;
             Angeles<br />Secret Files
         </h1>
         <p class="text-lg sm:text-xl md:text-2xl text-gray-900 font-playpen">
-            A place to read, write, and deepen your understanding.
+            A place to read, write, and laugh out loud.
         </p>
         <a href="#" class="bg-stone-900 text-white px-6 sm:px-8 md:px-10 py-2 sm:py-3 rounded-full text-base sm:text-lg md:text-xl 
             hover:bg-gray-700 transition font-semibold">

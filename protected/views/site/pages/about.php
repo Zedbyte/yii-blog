@@ -15,8 +15,8 @@ $this->pageTitle = Yii::app()->name . ' - About';
             Angeles <br/> Secret Files
         </h1>
         <p class="text-lg sm:text-xl md:text-2xl text-gray-900 font-playpen max-w-5xl text-center">
-            Welcome to <strong>Angeles Secret Files</strong>—a place where knowledge thrives.
-            Here, you can explore, discuss, and contribute valuable insights.
+            Welcome to <strong>Angeles Secret Files</strong>—a place where life stories thrives.
+            Here, you can explore, discuss, and contribute funny experiences.
         </p>
         <p class="text-base sm:text-lg md:text-xl text-gray-700 text-center">
 			Connect with me and explore my projects! Follow me on GitHub at <br/>

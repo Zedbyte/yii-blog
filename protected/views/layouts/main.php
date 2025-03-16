@@ -20,7 +20,7 @@
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
-<body class="bg-[#f7f4ed] text-gray-700 h-[calc(100vh)] flex flex-col items-center">
+<body class="bg-[#f7f4ed] text-gray-700 h-[calc(100dvh)] flex flex-col">
     <!-- Top Navigation Bar -->
     <?php $currentRoute = Yii::app()->controller->id . '/' . Yii::app()->controller->action->id; ?>
 
@@ -56,11 +56,11 @@
         </div>
     </nav>
     
-    <div class="w-full h-full flex flex-col justify-center items-center max-w-11/12 border-x border-gray-500">
+    <div class="flex-1 w-full max-w-11/12 mx-auto border-x border-gray-500 flex overflow-y-auto">
         <!-- Main Content -->
-        <main class="w-full h-full flex flex-col justify-center items-center">
+        <main class="w-full flex-1 px-4">
             <?php if(isset($this->breadcrumbs)):?>
-                <?php $this->widget('zii.widgets.CBreadcrumbs', array('links' => $this->breadcrumbs)); ?>
+                <?php //$this->widget('zii.widgets.CBreadcrumbs', array('links' => $this->breadcrumbs)); ?>
             <?php endif?>
             <?php echo $content; ?>
         </main>
