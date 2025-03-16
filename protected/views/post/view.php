@@ -96,7 +96,17 @@ $this->breadcrumbs=array(
                     <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/guest-avatar.png" class="object-cover w-10 h-10 rounded-full" alt="User">
                     <div>
                         <p class="font-medium text-gray-800"><?php echo CHtml::encode($comment->author); ?></p>
-                        <p class="text-sm text-gray-600"><?php echo nl2br(CHtml::encode($comment->content)); ?></p>
+                        <p>
+                            <?php if (!Yii::app()->user->isGuest): // Check if user is logged in ?>
+                                <?php echo CHtml::link(
+                                    CHtml::encode($comment->content),
+                                    array('comment/view', 'id' => $comment->id),
+                                    array('class' => 'hover:underline') // Styled link
+                                ); ?>
+                            <?php else: ?>
+                                <?php echo CHtml::encode($comment->content); // Show plain text for guests ?>
+                            <?php endif; ?>
+                        </p>
                         <p class="text-xs text-gray-500 mt-1"><?php echo date('F j, Y g:i A', $comment->create_time); ?></p>
                     </div>
                 </div>

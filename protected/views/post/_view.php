@@ -67,7 +67,17 @@
                     <?php foreach ($data->comments as $comment): ?>
                         <div class="border-t pt-2 mt-2 text-sm">
                             <strong><?php echo CHtml::encode($comment->author); ?>:</strong>
-                            <p><?php echo CHtml::encode($comment->content); ?></p>
+                            <p>
+                                <?php if (!Yii::app()->user->isGuest): // Check if user is logged in ?>
+                                    <?php echo CHtml::link(
+                                        CHtml::encode($comment->content),
+                                        array('comment/view', 'id' => $comment->id),
+                                        array('class' => 'hover:underline') // Styled link
+                                    ); ?>
+                                <?php else: ?>
+                                    <?php echo CHtml::encode($comment->content); // Show plain text for guests ?>
+                                <?php endif; ?>
+                            </p>
                         </div>
                     <?php endforeach; ?>
                 <?php else: ?>

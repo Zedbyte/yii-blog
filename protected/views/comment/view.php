@@ -103,22 +103,22 @@ $this->breadcrumbs=array(
         </span>
     </div>
 
-    <!-- Approve/Delete Actions (if pending) -->
-    <?php if ($model->status == Comment::STATUS_PENDING): ?>
-        <div class="flex space-x-4">
-            <?php echo CHtml::beginForm(array('approve', 'id'=>$model->id), 'post'); ?>
-                <?php echo CHtml::submitButton('Approve', array(
-                    'class'=>'bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-all'
-                )); ?>
-            <?php echo CHtml::endForm(); ?>
+    <!-- Approve/Delete Actions -->
+	<div class="flex justify-end space-x-4">
+		<?php if ($model->status != 2):
+		echo CHtml::beginForm(array('approve', 'id'=>$model->id), 'post'); ?>
+			<?php echo CHtml::submitButton('Approve', array(
+				'class'=>'bg-stone-800 text-white px-4 py-2 rounded-lg hover:bg-stone-700 transition-all'
+			)); ?>
+		<?php echo CHtml::endForm(); ?>
+		<?php endif; ?>
 
-            <?php echo CHtml::beginForm(array('delete', 'id'=>$model->id), 'post', array('confirm' => 'Are you sure?')); ?>
-                <?php echo CHtml::submitButton('Delete', array(
-                    'class'=>'bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-all'
-                )); ?>
-            <?php echo CHtml::endForm(); ?>
-        </div>
-    <?php endif; ?>
+		<?php echo CHtml::beginForm(array('delete', 'id'=>$model->id), 'post', array('confirm' => 'Are you sure?')); ?>
+			<?php echo CHtml::submitButton('Delete', array(
+				'class'=>'bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-all'
+			)); ?>
+		<?php echo CHtml::endForm(); ?>
+	</div>
 
     <!-- Link to View Post -->
     <div class="mt-6">

@@ -4421,3 +4421,29 @@ Stack trace:
 REQUEST_URI=/comment/index
 HTTP_REFERER=http://localhost:8080/comment/10
 ---
+2025/03/16 14:41:35 [error] [php] Undefined variable $data (C:\xampp\htdocs\yiiblog\protected\views\comment\view.php:108)
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): CommentController->renderInternal()
+#2 C:\xampp\htdocs\yiiblog\framework\web\CController.php(872): CommentController->renderFile()
+#3 C:\xampp\htdocs\yiiblog\framework\web\CController.php(785): CommentController->renderPartial()
+#4 C:\xampp\htdocs\yiiblog\protected\controllers\CommentController.php(53): CommentController->render()
+#5 unknown(0): CommentController->actionView()
+#6 C:\xampp\htdocs\yiiblog\framework\web\actions\CAction.php(114): ReflectionMethod->invokeArgs()
+#7 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#8 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CommentController->runAction()
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#12 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CommentController->filterAccessControl()
+#13 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#14 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CommentController->runActionWithFilters()
+#16 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CommentController->run()
+#17 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\yiiblog\index.php(13): CWebApplication->run()
+REQUEST_URI=/comment/22
+in C:\xampp\htdocs\yiiblog\protected\views\comment\view.php (108)
+in C:\xampp\htdocs\yiiblog\protected\controllers\CommentController.php (53)
+in C:\xampp\htdocs\yiiblog\index.php (13)

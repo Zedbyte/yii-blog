@@ -59,11 +59,13 @@
 
     <!-- Approval Actions -->
     <div class="flex justify-end space-x-2">
-        <?php echo CHtml::beginForm(array('approve', 'id'=>$data->id), 'post'); ?>
-            <?php echo CHtml::submitButton('Approve', array(
-                'class'=>'bg-stone-800 text-white px-4 py-2 rounded-lg hover:bg-stone-700 transition-all'
-            )); ?>
-        <?php echo CHtml::endForm(); ?>
+        <?php if ($data->status != 2): // Check if comment is NOT approved ?>
+            <?php echo CHtml::beginForm(array('approve', 'id' => $data->id), 'post'); ?>
+                <?php echo CHtml::submitButton('Approve', array(
+                    'class' => 'bg-stone-800 text-white px-4 py-2 rounded-lg hover:bg-stone-700 transition-all'
+                )); ?>
+            <?php echo CHtml::endForm(); ?>
+        <?php endif; ?>
 
         <?php echo CHtml::beginForm(array('delete', 'id' => $data->id), 'post', array(
             'onsubmit' => "return confirm('Are you sure you want to delete this comment?');"
