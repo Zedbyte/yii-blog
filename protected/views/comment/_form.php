@@ -73,13 +73,21 @@
 		<?php echo $form->error($model,'email'); ?>
 	</div> -->
 
+	<div class="mb-3">
+		<?php echo $form->textField($model, 'email', array(
+			'class' => 'w-full border rounded-lg px-4 py-2 border border-gray-300',
+			'placeholder' => 'Your email'
+		)); ?>
+		<?php echo $form->error($model, 'email', array('class' => 'text-red-500 text-sm')); ?>
+	</div>
+
 	<div class="flex justify-between items-center gap-5">
         <div class="flex space-x-3">
-			<?php echo $form->textField($model, 'email', array(
+			<?php echo $form->textField($model, 'url', array(
 				'class' => 'w-full border rounded-lg px-4 py-2 border border-gray-300',
-				'placeholder' => 'Your email'
+				'placeholder' => 'Your website (optional)'
 			)); ?>
-        	<?php echo $form->error($model, 'email', array('class' => 'text-red-500 text-sm')); ?>
+        	<?php echo $form->error($model, 'url', array('class' => 'text-red-500 text-sm')); ?>
         </div>
         <?php echo CHtml::submitButton('Post Comment', array(
             'class' => 'bg-stone-800 text-white font-semibold px-4 py-2 rounded-lg hover:bg-blue-600 transition-all'

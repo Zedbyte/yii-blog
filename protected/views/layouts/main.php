@@ -58,9 +58,9 @@
     
     <div class="flex-1 w-full max-w-11/12 mx-auto border-x border-gray-500 flex overflow-y-auto">
         <!-- Main Content -->
-        <main class="w-full flex-1 px-4">
+        <main class="w-full flex-1 px-4 py-2">
             <?php if(isset($this->breadcrumbs)): ?>
-                <nav class="my-4 text-sm text-gray-600 font-semibold">
+                <nav class="text-sm text-gray-600 font-semibold">
                     <!-- <?php if(isset($this->breadcrumbs)):?>
                         <?php $this->widget('zii.widgets.CBreadcrumbs', array('links' => $this->breadcrumbs)); ?>
                     <?php endif?> -->

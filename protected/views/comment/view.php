@@ -35,7 +35,7 @@ $this->menu=array(
 <div class="comment">
     <div class="comment-header">
         <strong><?php echo CHtml::encode($model->author); ?></strong> 
-        on <?php echo date('F j, Y, g:i a', strtotime($model->create_time)); ?>
+        on <?php echo date('F j, Y, g:i a', $model->create_time); ?>
     </div>
 
     <div class="comment-content">

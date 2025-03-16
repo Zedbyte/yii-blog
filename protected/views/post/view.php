@@ -65,7 +65,7 @@ $this->breadcrumbs=array(
         <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/default-avatar.jpg" class="w-12 h-12 rounded-full border border-gray-300" alt="Author">
         <div>
             <p class="font-semibold text-gray-800"><?php echo CHtml::encode($model->author->username); ?></p>
-            <p class="text-sm text-gray-500"><?php echo date('F j, Y', strtotime($model->create_time)); ?></p>
+            <p class="text-sm text-gray-500"><?php echo date('F j, Y', $model->create_time); ?></p>
         </div>
     </div>
 
@@ -97,7 +97,7 @@ $this->breadcrumbs=array(
                     <div>
                         <p class="font-medium text-gray-800"><?php echo CHtml::encode($comment->author); ?></p>
                         <p class="text-sm text-gray-600"><?php echo nl2br(CHtml::encode($comment->content)); ?></p>
-                        <p class="text-xs text-gray-500 mt-1"><?php echo date('F j, Y g:i A', strtotime($comment->create_time)); ?></p>
+                        <p class="text-xs text-gray-500 mt-1"><?php echo date('F j, Y g:i A', $comment->create_time); ?></p>
                     </div>
                 </div>
             <?php endforeach; ?>

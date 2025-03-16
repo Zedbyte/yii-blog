@@ -4,7 +4,7 @@
 ?>
 
 <div class="flex justify-center pt-5">
-    <div class="bg-[#fffef7] shadow-md rounded-lg pt-3 px-6 pb-6 mb-6 max-w-2xl w-full border border-stone-300 relative">
+    <div class="bg-[#fffef7] shadow-md rounded-lg pt-3 px-6 pb-6 mb-6 w-2xl border border-stone-300 relative">
 
 		<div class="flex justify-end">
 			<!-- View More Icon -->
@@ -24,7 +24,7 @@
                     <?php echo CHtml::encode($data->author->username); ?>
                 </h3>
                 <p class="text-gray-500 text-sm">
-                    <?php echo date('F j, Y, g:i a', strtotime($data->create_time)); ?>
+                    <?php echo date('F j, Y, g:i a', $data->create_time); ?>
                 </p>
             </div>
         </div>

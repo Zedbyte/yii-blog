@@ -22,4 +22,9 @@ $this->menu=array(
     'dataProvider'=>$dataProvider,
     'itemView'=>'_view',
     'template'=>"{items}\n{pager}", //Added
+    'pager' => array(
+        'header' => '', // Removes "Go to page" text
+        'firstPageLabel' => 'First',
+        'lastPageLabel' => 'Last',
+    ),
 )); ?>
