@@ -8,7 +8,7 @@
 
 		<div class="flex justify-end">
 			<!-- View More Icon -->
-			<a href="<?php echo CHtml::normalizeUrl(array('view', 'id' => $data->id)); ?>" 
+			<a href="<?php echo CHtml::normalizeUrl(array('/post/view', 'id' => $data->id)); ?>" 
 			class="text-stone-500 hover:text-stone-700 transition-all flex items-center space-x-1">
 				<span class="text-sm">View More</span>
 				<i class="ph ph-arrow-right text-xl"></i>

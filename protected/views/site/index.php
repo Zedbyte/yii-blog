@@ -13,7 +13,7 @@ $this->pageTitle=Yii::app()->name;
         <p class="text-lg sm:text-xl md:text-2xl text-gray-900 font-playpen">
             A place to read, write, and laugh out loud.
         </p>
-        <a href="#" class="bg-stone-900 text-white px-6 sm:px-8 md:px-10 py-2 sm:py-3 rounded-full text-base sm:text-lg md:text-xl 
+        <a href="/post" class="bg-stone-900 text-white px-6 sm:px-8 md:px-10 py-2 sm:py-3 rounded-full text-base sm:text-lg md:text-xl 
             hover:bg-gray-700 transition font-semibold">
             Start Reading
         </a>
@@ -26,6 +26,21 @@ $this->pageTitle=Yii::app()->name;
             alt="Random Thoughts" 
             class="w-[25em] md:w-[40em] lg:w-[60em] max-w-full h-auto object-contain">
     </div>
+</div>
+
+
+<div class="mt-36">
+    <h2 class="text-2xl font-bold mb-4">Latest Posts</h2>
+        <?php $this->widget('zii.widgets.CListView', array(
+        'dataProvider'=>$dataProvider,
+        'itemView'=>'//post/_view',
+        'template'=>"{items}\n{pager}", //Added
+        'pager' => array(
+            'header' => '', // Removes "Go to page" text
+            'firstPageLabel' => 'First',
+            'lastPageLabel' => 'Last',
+        ),
+    )); ?>
 </div>
 
 
