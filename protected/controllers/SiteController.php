@@ -1,5 +1,9 @@
 <?php
 
+require_once Yii::getPathOfAlias('ext.phpmailer') . '/PHPMailer.php';
+require_once Yii::getPathOfAlias('ext.phpmailer') . '/SMTP.php';
+require_once Yii::getPathOfAlias('ext.phpmailer') . '/Exception.php';
+
 class SiteController extends Controller
 {
 	/**
@@ -51,26 +55,59 @@ class SiteController extends Controller
 	 */
 	public function actionContact()
 	{
-		$model=new ContactForm;
-		if(isset($_POST['ContactForm']))
-		{
-			$model->attributes=$_POST['ContactForm'];
-			if($model->validate())
-			{
-				$name='=?UTF-8?B?'.base64_encode($model->name).'?=';
-				$subject='=?UTF-8?B?'.base64_encode($model->subject).'?=';
-				$headers="From: $name <{$model->email}>\r\n".
-					"Reply-To: {$model->email}\r\n".
-					"MIME-Version: 1.0\r\n".
-					"Content-Type: text/plain; charset=UTF-8";
+		$model = new ContactForm;
+		if (isset($_POST['ContactForm'])) {
+			$model->attributes = $_POST['ContactForm'];
+			if ($model->validate()) {
+				$mail = new PHPMailer\PHPMailer\PHPMailer();
+				$mail->isSMTP();
+				$mail->Host = Yii::app()->params['smtpHost'];
+				$mail->SMTPAuth = true;
+				$mail->Username = Yii::app()->params['smtpUsername'];
+				$mail->Password = Yii::app()->params['smtpPassword'];
+				$mail->SMTPSecure = Yii::app()->params['smtpSecure'];
+				$mail->Port = Yii::app()->params['smtpPort'];
 
-				mail(Yii::app()->params['adminEmail'],$subject,$model->body,$headers);
-				Yii::app()->user->setFlash('contact','Thank you for contacting us. We will respond to you as soon as possible.');
-				$this->refresh();
+				$mail->setFrom($model->email, $model->name);
+				$mail->addAddress(Yii::app()->params['adminEmail']);
+				$mail->Subject = $model->subject;
+				$mail->Body = $model->body;
+
+				$mail->SMTPDebug = 2;
+				$mail->Debugoutput = 'html';
+
+				if ($mail->send()) {
+					Yii::app()->user->setFlash('contact', 'Thank you for contacting us. We will respond to you as soon as possible.');
+					$this->refresh();
+				} else {
+					Yii::app()->user->setFlash('error', 'Mailer Error: ' . $mail->ErrorInfo);
+				}
 			}
 		}
-		$this->render('contact',array('model'=>$model));
+		$this->render('contact', array('model' => $model));
 	}
+	// public function actionContact()
+	// {
+	// 	$model=new ContactForm;
+	// 	if(isset($_POST['ContactForm']))
+	// 	{
+	// 		$model->attributes=$_POST['ContactForm'];
+	// 		if($model->validate())
+	// 		{
+	// 			$name='=?UTF-8?B?'.base64_encode($model->name).'?=';
+	// 			$subject='=?UTF-8?B?'.base64_encode($model->subject).'?=';
+	// 			$headers="From: $name <{$model->email}>\r\n".
+	// 				"Reply-To: {$model->email}\r\n".
+	// 				"MIME-Version: 1.0\r\n".
+	// 				"Content-Type: text/plain; charset=UTF-8";
+
+	// 			mail(Yii::app()->params['adminEmail'],$subject,$model->body,$headers);
+	// 			Yii::app()->user->setFlash('contact','Thank you for contacting us. We will respond to you as soon as possible.');
+	// 			$this->refresh();
+	// 		}
+	// 	}
+	// 	$this->render('contact',array('model'=>$model));
+	// }
 
 	/**
 	 * Displays the login page

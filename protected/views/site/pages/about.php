@@ -19,7 +19,7 @@ $this->pageTitle = Yii::app()->name . ' - About';
             Here, you can explore, discuss, and contribute valuable insights.
         </p>
         <p class="text-base sm:text-lg md:text-xl text-gray-700 text-center">
-			Connect with me and explore my projects! Follow me on GitHub at
+			Connect with me and explore my projects! Follow me on GitHub at <br/>
             <code class="bg-stone-600 px-2 py-1 rounded text-md text-gray-200">https://github.com/zedbyte</code>.
         </p>
         <a href="<?php echo Yii::app()->createUrl('/site/index'); ?>" 

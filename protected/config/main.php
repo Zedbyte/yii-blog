@@ -86,5 +86,11 @@ return array(
 		'commentNeedApproval'=>true,
 		'tagCloudCount'=>20,
 		'recentCommentCount'=>10,
+
+		'smtpUsername' => 'efrenreyessamoto@gmail.com',
+        'smtpPassword' => 'vqmo gcot ajlj hceg',
+		'smtpHost' => 'smtp.gmail.com',
+        'smtpPort' => 587,
+        'smtpSecure' => 'tls',
 	),
 );

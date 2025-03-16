@@ -1960,6 +1960,9 @@
     --tw-outline-style: solid;
     outline-style: solid;
   }
+  .\[hostname\:port\] {
+    hostname: port;
+  }
   .backface-hidden {
     backface-visibility: hidden;
   }
