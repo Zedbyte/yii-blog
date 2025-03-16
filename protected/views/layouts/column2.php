@@ -12,8 +12,8 @@
 		</div><!-- content -->
 	</div>
 
-	<div class="span-5 last col-span-2">
-		<div id="sidebar" class="sticky right-0 top-0 h-fit w-64 bg-[#fffef7] shadow-lg border-l border-stone-300 p-6 rounded-lg space-y-8">
+	<div class="span-5 last col-span-2 py-6 sticky right-0 top-0 h-fit">
+		<div id="sidebar" class=" w-64 bg-[#fffef7] shadow-lg border-l border-stone-300 p-6 rounded-lg space-y-8">
 			<!-- 🔖 Sort by Tags -->
 			<div>
 				<h2 class="text-lg font-semibold text-stone-700 flex items-center space-x-2 mb-3">

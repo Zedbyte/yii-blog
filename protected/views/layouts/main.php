@@ -60,7 +60,7 @@
         <!-- Main Content -->
         <main class="w-full flex-1 px-4">
             <?php if(isset($this->breadcrumbs)): ?>
-                <nav class="sticky my-4 text-sm text-gray-600 font-semibold">
+                <nav class="my-4 text-sm text-gray-600 font-semibold">
                     <!-- <?php if(isset($this->breadcrumbs)):?>
                         <?php $this->widget('zii.widgets.CBreadcrumbs', array('links' => $this->breadcrumbs)); ?>
                     <?php endif?> -->
