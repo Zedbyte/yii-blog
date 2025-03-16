@@ -2,6 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #bbb #f0f0f0;
+}
+
 .font-rampart {
     font-family: "Rampart One", sans-serif;
 }
@@ -23,4 +29,23 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #bbb;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #888;
 }

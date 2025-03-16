@@ -48,8 +48,11 @@
         <?php endif; ?>
 
         <!-- Tags -->
-        <div class="mt-3 text-sm text-gray-600">
-            <strong>Tags:</strong> <?php echo CHtml::encode($data->tags); ?>
+        <div class="mt-3 text-sm text-gray-600 w-fit">
+			<span class="py-1 px-2 flex space-x-1 rounded-2xl bg-stone-700">
+				<i class="ph ph-tag text-sm text-white"></i>
+				<p class="text-xs font-semibold text-white"><?php echo CHtml::encode($data->tags); ?></p>
+			</span>
         </div>
 
         <!-- Comment Section -->

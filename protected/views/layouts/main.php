@@ -59,9 +59,26 @@
     <div class="flex-1 w-full max-w-11/12 mx-auto border-x border-gray-500 flex overflow-y-auto">
         <!-- Main Content -->
         <main class="w-full flex-1 px-4">
-            <?php if(isset($this->breadcrumbs)):?>
-                <?php //$this->widget('zii.widgets.CBreadcrumbs', array('links' => $this->breadcrumbs)); ?>
-            <?php endif?>
+            <?php if(isset($this->breadcrumbs)): ?>
+                <nav class="sticky my-4 text-sm text-gray-600 font-semibold">
+                    <!-- <?php if(isset($this->breadcrumbs)):?>
+                        <?php $this->widget('zii.widgets.CBreadcrumbs', array('links' => $this->breadcrumbs)); ?>
+                    <?php endif?> -->
+                    <?php $this->widget('zii.widgets.CBreadcrumbs', array(
+                        'links' => $this->breadcrumbs,
+                        'tagName' => 'ul',
+                        'htmlOptions' => array('class' => 'flex space-x-2 items-center'),
+                        'separator' => '<span class="text-gray-400">/</span>',
+                        'homeLink' => CHtml::link(
+                            '<i class="ph ph-house font-bold text-lg hover:text-blue-500"></i>', 
+                            array('site/index'),
+                            array('class' => 'flex items-center space-x-1')
+                        ),
+                        'activeLinkTemplate' => '<li><a href="{url}" class="text-blue-500 hover:underline">{label}</a></li>',
+                        'inactiveLinkTemplate' => '<li class="text-gray-500">{label}</li>',
+                    )); ?>
+                </nav>
+            <?php endif; ?>
             <?php echo $content; ?>
         </main>
     </div>
