@@ -112,19 +112,50 @@ class Tag extends CActiveRecord
 		return implode(', ',$tags);
 	}
 
-	public function findTagWeights($maxTags=20)
+	// public function findTagWeights($maxTags=20)
+	// {
+	// 	$criteria = new CDbCriteria();
+	// 	$criteria->limit = $maxTags;
+	// 	$tags = Tag::model()->findAll($criteria);
+	// 	$tagWeight = array();
+	// 	foreach($tags as $tag)
+	// 	{
+	// 		$weight = $tag->frequency+8;
+	// 		$weight = $weight>=12 ? 12 : $weight;
+	// 		$tagWeight[$tag->name] = $weight;
+	// 	}
+	// 	echo "afljknasdjsa";
+	// 	var_dump($tagWeight);exit;
+	// 	return $tagWeight;
+	// }
+
+	public function findTagWeights($maxTags = 20)
 	{
 		$criteria = new CDbCriteria();
+		$criteria->order = 'frequency DESC'; // Order by most used tags
 		$criteria->limit = $maxTags;
+	
 		$tags = Tag::model()->findAll($criteria);
-		$tagWeight = array();
-		foreach($tags as $tag)
-		{
-			$weight = $tag->frequency+8;
-			$weight = $weight>=12 ? 12 : $weight;
-			$tagWeight[$tag->name] = $weight;
+		$tagData = array();
+	
+		// Find max frequency for dynamic scaling
+		$maxFrequency = 0;
+		foreach ($tags as $tag) {
+			if ($tag->frequency > $maxFrequency) {
+				$maxFrequency = $tag->frequency;
+			}
 		}
-		return $tagWeight;
+	
+		foreach ($tags as $tag) {
+			// Normalize weight between 8 and 12
+			$weight = 8 + round(($tag->frequency / max($maxFrequency, 1)) * 4);
+			$tagData[$tag->name] = [
+				'weight' => min($weight, 12), // Ensure weight doesn't exceed 12
+				'frequency' => $tag->frequency // Store actual frequency
+			];
+		}
+	
+		return $tagData;
 	}
 
 	public function updateFrequency($oldTags, $newTags)

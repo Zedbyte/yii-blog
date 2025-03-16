@@ -33,13 +33,13 @@
                     ['label' => 'About', 'route' => '/site/page', 'icon' => 'ph-info', 'params' => ['view' => 'about']],
                     ['label' => 'Contact', 'route' => '/site/contact', 'icon' => 'ph-phone'],
                     ['label' => 'Posts', 'route' => '/post', 'icon' => 'ph-pencil'],
-                    ['label' => 'Comments', 'route' => '/comment', 'icon' => 'ph-chat'],
                 ];
 
-                if (Yii::app()->user->isGuest) {
-                    $routes[] = ['label' => 'Login', 'route' => '/site/login', 'icon' => 'ph-sign-in'];
-                } else {
+                if (!Yii::app()->user->isGuest) {
+                    $routes[] = ['label' => 'Comments', 'route' => '/comment', 'icon' => 'ph-chat'];
                     $routes[] = ['label' => 'Logout', 'route' => '/site/logout', 'icon' => 'ph-sign-out'];
+                } else {
+                    $routes[] = ['label' => 'Login', 'route' => '/site/login', 'icon' => 'ph-sign-in'];
                 }
 
                 foreach ($routes as $item):
@@ -52,6 +52,12 @@
                         <span class="text-xs font-medium"><?php echo $item['label']; ?></span>
                     </a>
                 <?php endforeach; ?>
+
+                <!-- <div class="flex items-center space-x-4">
+                    <button id="themeToggle" class="p-2 rounded-lg transition hover:bg-gray-500">
+                        <i id="themeIcon" class="ph ph-moon text-3xl"></i>
+                    </button>
+                </div> -->
             </div>
         </div>
     </nav>
@@ -90,5 +96,35 @@
             <p>&copy; <?php echo date('Y'); ?> by Mark Jerome Santos. All Rights Reserved</p>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const themeToggle = document.getElementById("themeToggle");
+            const themeIcon = document.getElementById("themeIcon");
+            let currentTheme = localStorage.getItem("theme") || "dark";
+
+            function applyTheme(theme) {
+                if (theme === "light") {
+                    document.body.classList.remove("bg-slate-600", "text-gray-300");
+                    document.body.classList.add("bg-[#f7f4ed]", "text-gray-900");
+                    themeIcon.classList.replace("ph-moon", "ph-sun");
+                } else {
+                    document.body.classList.remove("bg-[#f7f4ed]", "text-gray-900");
+                    document.body.classList.add("bg-slate-600", "text-gray-300");
+                    themeIcon.classList.replace("ph-sun", "ph-moon");
+                }
+            }
+
+            // Apply stored theme on page load
+            applyTheme(currentTheme);
+
+            // Toggle theme on button click
+            themeToggle.addEventListener("click", function () {
+                currentTheme = currentTheme === "dark" ? "light" : "dark";
+                localStorage.setItem("theme", currentTheme);
+                applyTheme(currentTheme);
+            });
+        });
+    </script>
 </body>
 </html>
