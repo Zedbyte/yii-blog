@@ -64,35 +64,35 @@ $this->breadcrumbs=array(
 );
 ?>
 
-<div class="w-3xl mx-auto bg-[#fffef7] p-6 rounded-lg shadow-md border border-gray-300">
+<div class="w-3xl mx-auto bg-[#fffef7] dark:bg-stone-900 p-6 rounded-lg shadow-md border border-gray-300 dark:border-gray-700">
     <!-- Comment Author & Date -->
     <div class="flex items-center space-x-3 mb-4">
         <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/guest-avatar.png" 
             class="w-12 h-12 rounded-full border border-gray-300" alt="Author">
         <div>
-            <p class="font-semibold text-gray-800"><?php echo CHtml::encode($model->author); ?></p>
-            <p class="text-sm text-gray-500"><?php echo date('F j, Y g:i A', $model->create_time); ?></p>
+            <p class="font-semibold text-gray-800 dark:text-gray-200"><?php echo CHtml::encode($model->author); ?></p>
+            <p class="text-sm text-gray-500 dark:text-gray-300"><?php echo date('F j, Y g:i A', $model->create_time); ?></p>
         </div>
     </div>
 
     <!-- Comment Details -->
     <div class="mb-4 space-y-2">
-        <p class="text-sm text-gray-600"><strong>ID:</strong> <?php echo CHtml::encode($model->id); ?></p>
-        <p class="text-sm text-gray-600"><strong>Email:</strong> <?php echo CHtml::encode($model->email); ?></p>
+        <p class="text-sm text-gray-600 dark:text-gray-200"><strong>ID:</strong> <?php echo CHtml::encode($model->id); ?></p>
+        <p class="text-sm text-gray-600 dark:text-gray-200"><strong>Email:</strong> <?php echo CHtml::encode($model->email); ?></p>
         <?php if (!empty($model->url)): ?>
-            <p class="text-sm text-gray-600">
+            <p class="text-sm text-gray-600 dark:text-gray-200">
                 <strong>Website:</strong> 
                 <a href="<?php echo CHtml::encode($model->url); ?>" target="_blank" class="text-blue-600 hover:underline">
                     <?php echo CHtml::encode($model->url); ?>
                 </a>
             </p>
         <?php endif; ?>
-        <p class="text-sm text-gray-600"><strong>Post ID:</strong> <?php echo CHtml::encode($model->post_id); ?></p>
+        <p class="text-sm text-gray-600 dark:text-gray-200"><strong>Post ID:</strong> <?php echo CHtml::encode($model->post_id); ?></p>
     </div>
 
     <!-- Comment Content -->
     <div class="mb-4">
-        <p class="text-gray-700 mt-2"><?php echo nl2br(CHtml::encode($model->content)); ?></p>
+        <p class="text-gray-700 dark:text-gray-300 mt-2"><?php echo nl2br(CHtml::encode($model->content)); ?></p>
     </div>
 
     <!-- Comment Status -->
@@ -108,7 +108,7 @@ $this->breadcrumbs=array(
 		<?php if ($model->status != 2):
 		echo CHtml::beginForm(array('approve', 'id'=>$model->id), 'post'); ?>
 			<?php echo CHtml::submitButton('Approve', array(
-				'class'=>'bg-stone-800 text-white px-4 py-2 rounded-lg hover:bg-stone-700 transition-all'
+				'class'=>'bg-stone-800 dark:bg-stone-600 text-white px-4 py-2 rounded-lg hover:bg-stone-700 transition-all'
 			)); ?>
 		<?php echo CHtml::endForm(); ?>
 		<?php endif; ?>

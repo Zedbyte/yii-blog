@@ -59,25 +59,25 @@ $this->breadcrumbs=array(
 </div> -->
 
 
-<div class="w-3xl mx-auto bg-[#fffef7] p-6 rounded-lg shadow-md border border-gray-300">
+<div class="w-3xl mx-auto bg-[#fffef7] dark:bg-stone-800 p-6 rounded-lg shadow-md border border-gray-300 dark:border-gray-700">
     <!-- Post Author & Date -->
     <div class="flex items-center space-x-3 mb-4">
         <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/default-avatar.jpg" class="w-12 h-12 rounded-full border border-gray-300" alt="Author">
         <div>
-            <p class="font-semibold text-gray-800"><?php echo CHtml::encode($model->author->username); ?></p>
-            <p class="text-sm text-gray-500"><?php echo date('F j, Y', $model->create_time); ?></p>
+            <p class="font-semibold text-gray-800 dark:text-gray-200"><?php echo CHtml::encode($model->author->username); ?></p>
+            <p class="text-sm text-gray-500 dark:text-gray-300"><?php echo date('F j, Y', $model->create_time); ?></p>
         </div>
     </div>
 
     <!-- Post Content -->
     <div class="mb-4">
-        <h1 class="text-xl font-bold text-gray-900"><?php echo CHtml::encode($model->title); ?></h1>
-        <p class="text-gray-700 mt-2"><?php echo nl2br(CHtml::encode($model->content)); ?></p>
+        <h1 class="text-xl font-bold text-gray-900 dark:text-gray-100"><?php echo CHtml::encode($model->title); ?></h1>
+        <p class="text-gray-700 dark:text-gray-300 mt-2"><?php echo nl2br(CHtml::encode($model->content)); ?></p>
     </div>
 
     <!-- Comment Input -->
     <div class="mt-6">
-        <h3 class="text-lg font-semibold text-gray-800 mb-2">Leave a Comment</h3>
+        <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-2">Leave a Comment</h3>
         <?php if(Yii::app()->user->hasFlash('commentSubmitted')): ?>
             <div class="p-3 bg-green-100 text-green-700 rounded-md">
                 <?php echo Yii::app()->user->getFlash('commentSubmitted'); ?>
@@ -89,13 +89,13 @@ $this->breadcrumbs=array(
 
     <!-- Comments Section -->
     <div class="mt-6">
-        <h3 class="text-lg font-semibold text-gray-800 mb-4"><?php echo $model->commentCount; ?> Comment(s)</h3>
+        <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-4"><?php echo $model->commentCount; ?> Comment(s)</h3>
         <div class="space-y-4">
             <?php foreach($model->comments as $comment): ?>
                 <div class="flex space-x-3  p-3 rounded-lg">
                     <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/guest-avatar.png" class="object-cover w-10 h-10 rounded-full" alt="User">
                     <div>
-                        <p class="font-medium text-gray-800"><?php echo CHtml::encode($comment->author); ?></p>
+                        <p class="font-medium text-gray-800 dark:text-gray-100"><?php echo CHtml::encode($comment->author); ?></p>
                         <p>
                             <?php if (!Yii::app()->user->isGuest): // Check if user is logged in ?>
                                 <?php echo CHtml::link(
@@ -107,7 +107,7 @@ $this->breadcrumbs=array(
                                 <?php echo CHtml::encode($comment->content); // Show plain text for guests ?>
                             <?php endif; ?>
                         </p>
-                        <p class="text-xs text-gray-500 mt-1"><?php echo date('F j, Y g:i A', $comment->create_time); ?></p>
+                        <p class="text-xs text-gray-500 dark:text-gray-300 mt-1"><?php echo date('F j, Y g:i A', $comment->create_time); ?></p>
                     </div>
                 </div>
             <?php endforeach; ?>

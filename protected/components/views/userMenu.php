@@ -1,4 +1,4 @@
-<div id="admin-menu" class="w-16 text-stone-950 flex flex-col items-center space-y-10 py-6 relative">
+<div id="admin-menu" class="w-16 text-stone-950 dark:text-stone-100 flex flex-col items-center space-y-10 py-6 relative">
     <div class="font-semibold flex flex-col items-center">
         <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/default-avatar.jpg" 
             alt="User Avatar" class="w-12 h-12 rounded-full">

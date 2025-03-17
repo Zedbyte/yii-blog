@@ -90,7 +90,7 @@
         	<?php echo $form->error($model, 'url', array('class' => 'text-red-500 text-sm')); ?>
         </div>
         <?php echo CHtml::submitButton('Post Comment', array(
-            'class' => 'bg-stone-800 text-white font-semibold px-4 py-2 rounded-lg hover:bg-blue-600 transition-all'
+            'class' => 'bg-stone-800 dark:bg-[#f7f4ed] text-white dark:text-black font-semibold px-4 py-2 rounded-lg hover:bg-stone-600 dark:hover:bg-[#e0dccb] transition-all'
         )); ?>
     </div>
 

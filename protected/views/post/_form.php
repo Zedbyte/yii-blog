@@ -4,7 +4,7 @@
 /* @var $form CActiveForm */
 ?>
 
-<div class="w-10/12 mx-auto bg-[#fffef7] p-6 rounded-lg shadow-md border border-gray-300">
+<div class="w-10/12 mx-auto bg-[#fffef7] dark:bg-stone-800 p-6 rounded-lg shadow-md border border-gray-300">
 
 	<?php $form=$this->beginWidget('CActiveForm', array(
 		'id'=>'post-form',
@@ -25,7 +25,7 @@
 
     <!-- Title Field -->
     <div class="mb-4">
-        <?php echo $form->labelEx($model, 'title', array('class' => 'block text-gray-700 font-medium mb-1')); ?>
+        <?php echo $form->labelEx($model, 'title', array('class' => 'block text-gray-700 dark:text-gray-200 font-medium mb-1')); ?>
         <?php echo $form->textField($model, 'title', array(
             'class' => 'w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400',
             'maxlength' => 128

@@ -47,14 +47,15 @@
                 ?>
                     <a href="<?php echo Yii::app()->createUrl($item['route'], $item['params'] ?? []); ?>" 
                     class="flex flex-col items-center space-y-1 px-4 py-2 rounded-lg transition transform-3d
-                            <?php echo $isActive ? 'bg-stone-900 text-gray-100 dark:bg-stone-300 dark:text-gray-800 shadow-md' : 'text-gray-800 dark:text-gray-200 hover:bg-stone-300 hover:-translate-z-8 hover:translate-1 hover:rotate-z-2 hover:text-gray-600'; ?>">
+                            <?php echo $isActive ? 'bg-stone-900 text-gray-100 dark:bg-[#f7f4ed] dark:text-gray-800 shadow-md' : 
+                            'text-gray-800 dark:text-gray-200 hover:bg-stone-300 hover:-translate-z-8 hover:translate-1 hover:rotate-z-2 hover:text-gray-600'; ?>">
                         <i class="ph <?php echo $item['icon']; ?> text-3xl"></i>
                         <span class="text-xs font-medium"><?php echo $item['label']; ?></span>
                     </a>
                 <?php endforeach; ?>
 
                 <div class="flex items-center space-x-4">
-                    <button id="themeToggle" class="p-2 rounded-lg transition hover:bg-stone-300">
+                    <button id="themeToggle" class="p-2 rounded-lg transition hover:bg-stone-300 dark:hover:text-stone-700">
                         <i id="themeIcon" class="ph ph-moon text-3xl"></i>
                     </button>
                 </div>
@@ -66,7 +67,7 @@
         <!-- Main Content -->
         <main class="w-full flex-1 px-4 py-2">
             <?php if(isset($this->breadcrumbs)): ?>
-                <nav class="text-sm text-gray-600 font-semibold">
+                <nav class="text-sm text-gray-600 dark:text-gray-200 font-semibold">
                     <!-- <?php if(isset($this->breadcrumbs)):?>
                         <?php $this->widget('zii.widgets.CBreadcrumbs', array('links' => $this->breadcrumbs)); ?>
                     <?php endif?> -->
@@ -74,14 +75,14 @@
                         'links' => $this->breadcrumbs,
                         'tagName' => 'ul',
                         'htmlOptions' => array('class' => 'flex space-x-2 items-center'),
-                        'separator' => '<span class="text-gray-400">/</span>',
+                        'separator' => '<span class="text-gray-400 dark:text-gray-100">/</span>',
                         'homeLink' => CHtml::link(
                             '<i class="ph ph-house font-bold text-lg hover:text-blue-500"></i>', 
                             array('site/index'),
                             array('class' => 'flex items-center space-x-1')
                         ),
                         'activeLinkTemplate' => '<li><a href="{url}" class="text-blue-500 hover:underline">{label}</a></li>',
-                        'inactiveLinkTemplate' => '<li class="text-gray-500">{label}</li>',
+                        'inactiveLinkTemplate' => '<li class="text-gray-500 dark:text-gray-200">{label}</li>',
                     )); ?>
                 </nav>
             <?php endif; ?>

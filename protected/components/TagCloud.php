@@ -35,12 +35,13 @@ class TagCloud extends CPortlet
             $link = CHtml::link(
                 CHtml::encode($tag),
                 array('post/index', 'tag' => $tag),
-                array('class' => 'hover:text-white') // Hover effect
             );
 
             echo CHtml::tag('span', array(
-                'class' => 'px-3 py-1 rounded-full transition-all hover:bg-stone-500 hover:text-gray-200',
-                'style' => "font-size: {$data['weight']}px; background-color: rgba(68,64,60, 1); color: #fff;", // Adjust font size based on weight
+                'class' => 'px-3 py-1 rounded-full transition-all 
+                bg-stone-800 hover:bg-stone-700 text-white hover:text-gray-200
+                dark:bg-[#f7f4ed] dark:hover:bg-[#e0dccb] dark:text-black dark:hover:text-stone-800',
+                'style' => "font-size: {$data['weight']}px;", // Adjust font size based on weight
             ), $link . " ({$data['frequency']})") . "\n"; // Append frequency in parentheses
         }
         echo '</div>';

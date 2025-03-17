@@ -4,12 +4,12 @@
 ?>
 
 <div class="flex justify-center pt-5">
-    <div class="bg-[#fffef7] shadow-md rounded-lg pt-3 px-6 pb-6 mb-6 w-2xl border border-stone-300 relative">
+    <div class="bg-[#fffef7] dark:bg-stone-900 shadow-md rounded-lg pt-3 px-6 pb-6 mb-6 w-2xl border border-stone-300 dark:border-stone-700 relative">
 
 		<div class="flex justify-end">
 			<!-- View More Icon -->
 			<a href="<?php echo CHtml::normalizeUrl(array('/post/view', 'id' => $data->id)); ?>" 
-			class="text-stone-500 hover:text-stone-700 transition-all flex items-center space-x-1">
+			class="text-stone-500 dark:text-gray-300 hover:text-stone-700 dark:hover:text-stone-100 transition-all flex items-center space-x-1">
 				<span class="text-sm">View More</span>
 				<i class="ph ph-arrow-right text-xl"></i>
 			</a>
@@ -23,7 +23,7 @@
                 <h3 class="font-bold text-lg">
                     <?php echo CHtml::encode($data->author->username); ?>
                 </h3>
-                <p class="text-gray-500 text-sm">
+                <p class="text-gray-500 dark:text-gray-200 text-sm">
                     <?php echo date('F j, Y, g:i a', $data->create_time); ?>
                 </p>
             </div>
@@ -35,7 +35,7 @@
         </h2>
 
         <!-- Post Content -->
-        <p class="mt-2 text-gray-900">
+        <p class="mt-2 text-gray-900 dark:text-gray-100">
             <?php echo nl2br(CHtml::encode($data->content)); ?>
         </p>
 
@@ -58,7 +58,7 @@
         <!-- Comment Section -->
         <div class="mt-6">
             <button onclick="toggleComments(<?php echo $data->id; ?>)" 
-                    class="text-stone-900 font-semibold flex items-center space-x-2 hover:underline">
+                    class="text-stone-900 dark:text-gray-100 font-semibold flex items-center space-x-2 hover:underline">
                 <i class="ph ph-chat-circle text-lg"></i>
                 <span>View Comments</span>
             </button>
@@ -81,7 +81,7 @@
                         </div>
                     <?php endforeach; ?>
                 <?php else: ?>
-                    <p class="text-gray-500 text-sm">No comments yet.</p>
+                    <p class="text-gray-500 dark:text-gray-500 text-sm">No comments yet.</p>
                 <?php endif; ?>
             </div>
         </div>
