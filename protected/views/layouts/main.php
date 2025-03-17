@@ -20,7 +20,7 @@
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
-<body class="bg-[#f7f4ed] text-gray-700 h-[calc(100dvh)] flex flex-col">
+<body class="dark:bg-stone-800 bg-[#f7f4ed] text-gray-700 dark:text-gray-200 h-[calc(100dvh)] flex flex-col">
     <!-- Top Navigation Bar -->
     <?php $currentRoute = Yii::app()->controller->id . '/' . Yii::app()->controller->action->id; ?>
 
@@ -47,17 +47,17 @@
                 ?>
                     <a href="<?php echo Yii::app()->createUrl($item['route'], $item['params'] ?? []); ?>" 
                     class="flex flex-col items-center space-y-1 px-4 py-2 rounded-lg transition transform-3d
-                            <?php echo $isActive ? 'bg-stone-900 text-gray-100 shadow-md' : 'text-gray-800 hover:bg-stone-300 hover:-translate-z-8 hover:translate-1 hover:rotate-z-2 hover:text-gray-600'; ?>">
+                            <?php echo $isActive ? 'bg-stone-900 text-gray-100 dark:bg-stone-300 dark:text-gray-800 shadow-md' : 'text-gray-800 dark:text-gray-200 hover:bg-stone-300 hover:-translate-z-8 hover:translate-1 hover:rotate-z-2 hover:text-gray-600'; ?>">
                         <i class="ph <?php echo $item['icon']; ?> text-3xl"></i>
                         <span class="text-xs font-medium"><?php echo $item['label']; ?></span>
                     </a>
                 <?php endforeach; ?>
 
-                <!-- <div class="flex items-center space-x-4">
-                    <button id="themeToggle" class="p-2 rounded-lg transition hover:bg-gray-500">
+                <div class="flex items-center space-x-4">
+                    <button id="themeToggle" class="p-2 rounded-lg transition hover:bg-stone-300">
                         <i id="themeIcon" class="ph ph-moon text-3xl"></i>
                     </button>
-                </div> -->
+                </div>
             </div>
         </div>
     </nav>
@@ -92,38 +92,32 @@
     <!-- Footer -->
     <footer class="w-full flex justify-center border-t border-gray-500 font-light 
     text-center text-gray-700 relative bottom-0 inset-x-0 shadow-md">
-        <div class="w-11/12 p-4 border-x border-gray-500">
+        <div class="w-11/12 p-4 border-x border-gray-500 dark:text-white">
             <p>&copy; <?php echo date('Y'); ?> by Mark Jerome Santos. All Rights Reserved</p>
         </div>
     </footer>
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            const themeToggle = document.getElementById("themeToggle");
-            const themeIcon = document.getElementById("themeIcon");
-            let currentTheme = localStorage.getItem("theme") || "dark";
+            const htmlRoot = document.documentElement;
+            const button = document.querySelector('#themeToggle');
 
-            function applyTheme(theme) {
-                if (theme === "light") {
-                    document.body.classList.remove("bg-slate-600", "text-gray-300");
-                    document.body.classList.add("bg-[#f7f4ed]", "text-gray-900");
-                    themeIcon.classList.replace("ph-moon", "ph-sun");
-                } else {
-                    document.body.classList.remove("bg-[#f7f4ed]", "text-gray-900");
-                    document.body.classList.add("bg-slate-600", "text-gray-300");
-                    themeIcon.classList.replace("ph-sun", "ph-moon");
-                }
+            // Apply the saved theme
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            htmlRoot.classList.add(savedTheme);
+
+            function toggleTheme() {
+                htmlRoot.classList.toggle('dark');
+                htmlRoot.classList.toggle('light');
+
+                // Save the theme
+                const newTheme = htmlRoot.classList.contains('dark') ? 'dark' : 'light';
+                localStorage.setItem('theme', newTheme);
             }
 
-            // Apply stored theme on page load
-            applyTheme(currentTheme);
-
-            // Toggle theme on button click
-            themeToggle.addEventListener("click", function () {
-                currentTheme = currentTheme === "dark" ? "light" : "dark";
-                localStorage.setItem("theme", currentTheme);
-                applyTheme(currentTheme);
-            });
+            if (button) {
+                button.addEventListener('click', toggleTheme);
+            }
         });
     </script>
 </body>
