@@ -4,7 +4,7 @@
 /* @var $form CActiveForm */
 ?>
 
-<div class="form  p-4 rounded-lg shadow-sm">
+<div class="form bg-[#fffef7] dark:bg-stone-900 p-4 rounded-lg shadow-sm">
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 
