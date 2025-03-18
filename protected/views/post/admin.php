@@ -140,45 +140,59 @@ $('.search-form form').submit(function(){
     </div>
     <!-- Data Grid -->
     <div class="overflow-x-auto mt-6">
-        <?php $this->widget('zii.widgets.grid.CGridView', array(
+            <?php $this->widget('zii.widgets.grid.CGridView', array(
             'id' => 'post-grid',
             'dataProvider' => $model->search(),
             'filter' => $model,
-            //'itemsCssClass' => 'w-full border border-gray-300 text-left text-gray-800 dark:text-gray-100 rounded-lg overflow-hidden',
+            'itemsCssClass' => 'w-full border border-gray-300 text-gray-900 rounded-lg table-fixed',
+            'htmlOptions' => array('class' => 'shadow-lg rounded-lg'),
+            'rowCssClass' => array('bg-white', 'bg-gray-100'), // Alternating row colors
             'columns' => array(
+                array(
+                    'name' => 'id',
+                    'htmlOptions' => array(
+                        'class' => 'px-4 py-3 border-b border-gray-300 text-center font-medium',
+                        'style' => 'width: 80px; min-width: 60px; max-width: 100px;', // Ensures compact ID column
+                    ),
+                ),
                 array(
                     'name' => 'title',
                     'type' => 'raw',
-                    'value' => 'CHtml::link(CHtml::encode($data->title), $data->url, array("class"=>"text-blue-500 hover:underline"))'
+                    'value' => 'CHtml::link(CHtml::encode($data->title), $data->url, array("class"=>"text-blue-500 hover:underline"))',
+                    'htmlOptions' => array('class' => 'px-4 py-3 border-b border-gray-300 font-medium'),
                 ),
                 array(
-					'name' => 'status',
-					'value' => 'Lookup::item("PostStatus", $data->status)',
-					'filter' => Lookup::items('PostStatus'),
-					'htmlOptions' => array('class' => 'font-semibold'),
-					'cssClassExpression' => '$data->status === 3 ? "text-gray-500" : ($data->status === 2 ? "text-green-500" : "text-yellow-500")',
-				),
+                    'name' => 'status',
+                    'value' => 'Lookup::item("PostStatus", $data->status)',
+                    'filter' => Lookup::items('PostStatus'),
+                    'htmlOptions' => array('class' => 'px-4 py-3 border-b border-gray-300 font-semibold text-center'),
+                    'cssClassExpression' => '$data->status === 3 ? "text-gray-500" : ($data->status === 2 ? "text-green-500" : "text-yellow-500")',
+                ),
                 array(
-					'name' => 'create_time',
-					'value' => 'date("F d, Y h:i A", $data->create_time)',
-					'filter' => false,
-				),
+                    'name' => 'create_time',
+                    'value' => 'date("F d, Y h:i A", $data->create_time)',
+                    'filter' => false,
+                    'htmlOptions' => array('class' => 'px-4 py-3 border-b border-gray-300 text-sm text-center'),
+                ),
                 array(
+                    'header' => 'Actions',
                     'class' => 'CButtonColumn',
-                    // 'htmlOptions' => array('class' => 'px-4 py-2 text-center flex gap-5'),
-                    // 'template' => '{update} {delete}',
-                    // 'buttons' => array(
-                    //     'update' => array(
-                    //         'label' => '',
-                    //         'imageUrl' => false,
-                    //         'options' => array('class' => 'ph ph-pencil text-green-500 hover:underline'),
-                    //     ),
-                    //     'delete' => array(
-                    //         'label' => '',
-                    //         'imageUrl' => false,
-                    //         'options' => array('class' => 'ph ph-trash text-red-500 hover:underline'),
-                    //     ),
-                    // ),
+                    'htmlOptions' => array('class' => 'px-4 py-3 border-b border-gray-300 text-center space-x-5'),
+                    'template' => '{update} {delete}',
+                    'buttons' => array(
+                        'update' => array(
+                            'label' => '<i class="ph ph-pencil"></i>',
+                            'imageUrl' => false,
+                            'encodeLabel' => false,
+                            'options' => array('class' => 'text-green-600'),
+                        ),
+                        'delete' => array(
+                            'label' => '<i class="ph ph-trash"></i>',
+                            'imageUrl' => false,
+                            'encodeLabel' => false,
+                            'options' => array('class' => 'text-red-600'),
+                        ),
+                    ),
                 ),
             ),
         )); ?>
