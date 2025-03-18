@@ -114,7 +114,8 @@ $('.search-form form').submit(function(){
                 array(
                     'name' => 'status',
                     'value' => 'Lookup::item("CommentStatus", $data->status)',
-                    'filter' => Lookup::items('CommentStatus'),
+                    // 'filter' => Lookup::items('CommentStatus'),
+                    'filter' => false,
                     'htmlOptions' => array('class' => 'px-4 py-3 border-b border-gray-300 font-semibold text-center'),
                     'cssClassExpression' => '$data->status === 3 ? "text-gray-500" : ($data->status === 2 ? "text-green-600" : "text-yellow-600")',
                 ),

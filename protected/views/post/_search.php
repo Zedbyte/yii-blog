@@ -97,7 +97,10 @@
 
         <div>
             <?php echo $form->label($model, 'status', array('class' => 'block text-sm font-medium text-gray-700 dark:text-gray-300')); ?>
-            <?php echo $form->textField($model, 'status', array('class' => 'w-full px-4 py-2 border rounded-lg bg-white dark:bg-gray-800 dark:text-white')); ?>
+            <?php //echo $form->textField($model, 'status', array('class' => 'w-full px-4 py-2 border rounded-lg bg-white dark:bg-gray-800 dark:text-white')); ?>
+            <?php echo $form->dropDownList($model, 'status', Lookup::items('PostStatus'), array(
+                'class' => 'w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 bg-white'
+            )); ?>
         </div>
 
         <div>
