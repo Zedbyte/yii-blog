@@ -35,7 +35,7 @@
         </h2>
 
         <!-- Post Content -->
-        <p class="mt-2 text-gray-900 dark:text-gray-100">
+        <p class="mt-2 text-gray-900 dark:text-gray-100 line-clamp-3">
             <?php echo nl2br(CHtml::encode($data->content)); ?>
         </p>
 

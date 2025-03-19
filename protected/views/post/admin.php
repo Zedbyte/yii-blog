@@ -133,7 +133,7 @@ $('.search-form form').submit(function(){
     </p> -->
 
     <!-- Search Button -->
-    <?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button bg-gray-700 dark:bg-[#f7f4ed] dark:hover:bg-[#e0dccb] text-white dark:text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-800 transition-all')); ?>
+    <?php //echo CHtml::link('Advanced Search','#',array('class'=>'search-button bg-gray-700 dark:bg-[#f7f4ed] dark:hover:bg-[#e0dccb] text-white dark:text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-800 transition-all')); ?>
     
     <div class="search-form mt-4 hidden">
         <?php $this->renderPartial('_search', array('model'=>$model)); ?>

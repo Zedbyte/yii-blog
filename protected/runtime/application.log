@@ -8379,3 +8379,147 @@ in C:\xampp\htdocs\yiiblog\index.php (13)
 2025/03/19 15:57:17 [warning] [application] Failed to set unsafe attribute "id" of "Post".
 in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (193)
 in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/19 15:58:13 [warning] [application] Failed to set unsafe attribute "id" of "Post".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (193)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/19 15:58:13 [warning] [application] Failed to set unsafe attribute "create_time" of "Post".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (193)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/19 15:58:13 [warning] [application] Failed to set unsafe attribute "update_time" of "Post".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (193)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/19 15:58:13 [warning] [application] Failed to set unsafe attribute "author_id" of "Post".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (193)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/19 15:58:59 [warning] [application] Failed to set unsafe attribute "id" of "Post".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (193)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/19 15:58:59 [warning] [application] Failed to set unsafe attribute "create_time" of "Post".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (193)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/19 15:58:59 [warning] [application] Failed to set unsafe attribute "update_time" of "Post".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (193)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/19 15:58:59 [warning] [application] Failed to set unsafe attribute "author_id" of "Post".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (193)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/19 15:59:01 [warning] [application] Failed to set unsafe attribute "id" of "Post".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (193)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/19 15:59:01 [warning] [application] Failed to set unsafe attribute "create_time" of "Post".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (193)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/19 15:59:01 [warning] [application] Failed to set unsafe attribute "update_time" of "Post".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (193)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/19 15:59:01 [warning] [application] Failed to set unsafe attribute "author_id" of "Post".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (193)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/19 15:59:01 [warning] [application] Failed to set unsafe attribute "id" of "Post".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (193)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/19 15:59:01 [warning] [application] Failed to set unsafe attribute "create_time" of "Post".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (193)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/19 15:59:01 [warning] [application] Failed to set unsafe attribute "update_time" of "Post".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (193)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/19 15:59:01 [warning] [application] Failed to set unsafe attribute "author_id" of "Post".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (193)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/19 15:59:03 [warning] [application] Failed to set unsafe attribute "id" of "Post".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (193)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/19 15:59:03 [warning] [application] Failed to set unsafe attribute "create_time" of "Post".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (193)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/19 15:59:03 [warning] [application] Failed to set unsafe attribute "update_time" of "Post".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (193)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/19 15:59:03 [warning] [application] Failed to set unsafe attribute "author_id" of "Post".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (193)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/19 16:01:55 [warning] [application] Failed to set unsafe attribute "id" of "Post".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (193)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/19 16:02:16 [warning] [application] Failed to set unsafe attribute "create_time" of "Post".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (193)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/19 16:02:16 [warning] [application] Failed to set unsafe attribute "update_time" of "Post".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (193)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/19 16:02:16 [warning] [application] Failed to set unsafe attribute "author_id" of "Post".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (193)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/19 16:02:25 [warning] [application] Failed to set unsafe attribute "create_time" of "Post".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (193)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/19 16:02:25 [warning] [application] Failed to set unsafe attribute "update_time" of "Post".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (193)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/19 16:02:25 [warning] [application] Failed to set unsafe attribute "author_id" of "Post".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (193)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/19 16:02:30 [warning] [application] Failed to set unsafe attribute "create_time" of "Post".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (193)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/19 16:02:30 [warning] [application] Failed to set unsafe attribute "update_time" of "Post".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (193)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/19 16:02:30 [warning] [application] Failed to set unsafe attribute "author_id" of "Post".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (193)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/19 16:02:49 [warning] [application] Failed to set unsafe attribute "create_time" of "Post".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (193)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/19 16:02:49 [warning] [application] Failed to set unsafe attribute "update_time" of "Post".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (193)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/19 16:02:49 [warning] [application] Failed to set unsafe attribute "author_id" of "Post".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (193)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/19 16:03:00 [warning] [application] Failed to set unsafe attribute "create_time" of "Post".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (193)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/19 16:03:00 [warning] [application] Failed to set unsafe attribute "update_time" of "Post".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (193)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/19 16:03:00 [warning] [application] Failed to set unsafe attribute "author_id" of "Post".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (193)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/19 16:05:05 [error] [php] Undefined variable $data (C:\xampp\htdocs\yiiblog\protected\views\post\view.php:82)
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yiiblog\framework\web\CBaseController.php(95): PostController->renderInternal()
+#2 C:\xampp\htdocs\yiiblog\framework\web\CController.php(872): PostController->renderFile()
+#3 C:\xampp\htdocs\yiiblog\framework\web\CController.php(785): PostController->renderPartial()
+#4 C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php(69): PostController->render()
+#5 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): PostController->actionView()
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#8 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#11 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): PostController->runActionWithFilters()
+#14 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): PostController->run()
+#15 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\yiiblog\index.php(13): CWebApplication->run()
+REQUEST_URI=/post/7?title=poses
+in C:\xampp\htdocs\yiiblog\protected\views\post\view.php (82)
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (69)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/19 16:15:45 [warning] [application] Failed to set unsafe attribute "id" of "Comment".
+in C:\xampp\htdocs\yiiblog\protected\controllers\CommentController.php (163)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/19 16:15:46 [warning] [application] Failed to set unsafe attribute "id" of "Comment".
+in C:\xampp\htdocs\yiiblog\protected\controllers\CommentController.php (163)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/19 16:16:55 [warning] [application] Failed to set unsafe attribute "id" of "Comment".
+in C:\xampp\htdocs\yiiblog\protected\controllers\CommentController.php (163)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/19 16:16:57 [warning] [application] Failed to set unsafe attribute "id" of "Comment".
+in C:\xampp\htdocs\yiiblog\protected\controllers\CommentController.php (163)
+in C:\xampp\htdocs\yiiblog\index.php (13)

@@ -75,6 +75,14 @@ $this->breadcrumbs=array(
         <p class="text-gray-700 dark:text-gray-300 mt-2"><?php echo nl2br(CHtml::encode($model->content)); ?></p>
     </div>
 
+    <!-- Tags -->
+    <div class="mt-3 text-sm text-gray-600 w-fit">
+        <span class="py-1 px-2 flex space-x-1 rounded-2xl bg-stone-700">
+            <i class="ph ph-tag text-sm text-white"></i>
+            <p class="text-xs font-semibold text-white"><?php echo CHtml::encode($model->tags); ?></p>
+        </span>
+    </div>
+
     <!-- Comment Input -->
     <?php if (Yii::app()->user->isGuest) : ?>
         <div class="mt-6">

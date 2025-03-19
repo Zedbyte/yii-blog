@@ -58,6 +58,7 @@ class Post extends CActiveRecord
 			array('tags', 'normalizeTags'),
 	
 			array('title, status', 'safe', 'on'=>'search'),
+			array('id', 'numerical', 'integerOnly'=>true),
 		);
 	}
 

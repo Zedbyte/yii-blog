@@ -85,7 +85,7 @@ $('.search-form form').submit(function(){
     <h1 class="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-4">Manage Comments</h1>
 
     <!-- Search Button -->
-    <?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button bg-gray-700 dark:bg-[#f7f4ed] dark:hover:bg-[#e0dccb] text-white dark:text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-800 transition-all')); ?>
+    <?php //echo CHtml::link('Advanced Search','#',array('class'=>'search-button bg-gray-700 dark:bg-[#f7f4ed] dark:hover:bg-[#e0dccb] text-white dark:text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-800 transition-all')); ?>
 
     <div class="search-form mt-4 hidden">
         <?php $this->renderPartial('_search', array('model'=>$model)); ?>
@@ -114,8 +114,7 @@ $('.search-form form').submit(function(){
                 array(
                     'name' => 'status',
                     'value' => 'Lookup::item("CommentStatus", $data->status)',
-                    // 'filter' => Lookup::items('CommentStatus'),
-                    'filter' => false,
+                    'filter' => Lookup::items('CommentStatus'),
                     'htmlOptions' => array('class' => 'px-4 py-3 border-b border-gray-300 font-semibold text-center'),
                     'cssClassExpression' => '$data->status === 3 ? "text-gray-500" : ($data->status === 2 ? "text-green-600" : "text-yellow-600")',
                 ),

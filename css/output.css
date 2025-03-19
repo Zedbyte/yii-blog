@@ -481,6 +481,18 @@
   .box-content {
     box-sizing: content-box;
   }
+  .line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+  .line-clamp-3 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
   .line-clamp-none {
     overflow: visible;
     display: block;
@@ -1411,6 +1423,9 @@
   }
   .bg-\[\#0088cc\] {
     background-color: #0088cc;
+  }
+  .bg-\[\#\] {
+    background-color: #;
   }
   .bg-\[\#f7f4ed\] {
     background-color: #f7f4ed;
