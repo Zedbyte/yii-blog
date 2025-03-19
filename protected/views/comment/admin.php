@@ -97,9 +97,9 @@ $('.search-form form').submit(function(){
             'id' => 'comment-grid',
             'dataProvider' => $model->search(),
             'filter' => $model,
-            'itemsCssClass' => 'w-full border border-gray-300 text-gray-900 rounded-lg table-fixed',
+            'itemsCssClass' => 'w-full border border-gray-300 text-gray-500 rounded-lg table-fixed',
             'htmlOptions' => array('class' => 'shadow-lg rounded-lg'), 
-            'rowCssClass' => array('bg-white', 'bg-gray-100'), // Alternating row colors
+            'rowCssClass' => array('bg-white dark-bg-admin-primary', 'bg-gray-100 dark-bg-admin-secondary'), // Alternating row colors
             'columns' => array(
                 array(
                     'name' => 'id',

@@ -4,7 +4,7 @@
 /* @var $form CActiveForm */
 ?>
 
-<div class="form bg-[#fffef7] dark:bg-stone-900 p-4 rounded-lg shadow-sm">
+<div class="form bg-[#fffef7] dark:bg-stone-800 p-4 rounded-lg shadow-sm">
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 
@@ -34,7 +34,7 @@
 
 	<div class="mb-3">
         <?php echo $form->textField($model, 'author', array(
-            'class' => 'w-full border rounded-lg px-4 py-2 border border-gray-300',
+            'class' => 'w-full border rounded-lg px-4 py-2 border border-gray-300 dark:bg-stone-800 dark:text-white dark:border-stone-700',
             'placeholder' => 'Your Name'
         )); ?>
         <?php echo $form->error($model, 'author', array('class' => 'text-red-500 text-sm')); ?>
@@ -43,17 +43,26 @@
 	<div class="mb-4">
         <?php echo $form->textArea($model, 'content', array(
             'rows'=>3, 
-            'class'=>'w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400',
+            'class'=>'w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 dark:bg-stone-800 dark:text-white dark:border-stone-700',
             'placeholder'=>'Write a comment...'
         )); ?>
         <?php echo $form->error($model, 'content', array('class' => 'text-red-500 text-sm')); ?>
     </div>
 
-	<div class="row">
+	<!-- <div class="row">
 		<?php echo $form->labelEx($model,'status'); ?>
 		<?php echo $form->textField($model,'status'); ?>
 		<?php echo $form->error($model,'status'); ?>
-	</div>
+	</div> -->
+
+	<!-- Users must not see this -->
+	<!-- <div class="mb-4">
+		<?php //echo $form->labelEx($model, 'status', array('class' => 'block text-gray-700 font-medium mb-1 dark:text-gray-200')); ?>
+		<?php //echo $form->dropDownList($model, 'status', Lookup::items('CommentStatus'), array(
+			//'class' => 'w-full border border-gray-400 dark:border-stone-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 dark:bg-stone-800 dark:text-white'
+		//)); ?>
+		<?php //echo $form->error($model, 'status', array('class' => 'text-red-500 text-sm')); ?>
+	</div> -->
 
 	<!-- <div class="row">
 		<?php echo $form->labelEx($model,'create_time'); ?>
@@ -75,7 +84,7 @@
 
 	<div class="mb-3">
 		<?php echo $form->textField($model, 'email', array(
-			'class' => 'w-full border rounded-lg px-4 py-2 border border-gray-300',
+			'class' => 'w-full border rounded-lg px-4 py-2 border border-gray-300 dark:bg-stone-800 dark:text-white dark:border-stone-700',
 			'placeholder' => 'Your email'
 		)); ?>
 		<?php echo $form->error($model, 'email', array('class' => 'text-red-500 text-sm')); ?>
@@ -84,7 +93,7 @@
 	<div class="flex justify-between items-center gap-5">
         <div class="flex space-x-3">
 			<?php echo $form->textField($model, 'url', array(
-				'class' => 'w-full border rounded-lg px-4 py-2 border border-gray-300',
+				'class' => 'w-full border rounded-lg px-4 py-2 border border-gray-300 dark:bg-stone-800 dark:text-white dark:border-stone-700',
 				'placeholder' => 'Your website (optional)'
 			)); ?>
         	<?php echo $form->error($model, 'url', array('class' => 'text-red-500 text-sm')); ?>

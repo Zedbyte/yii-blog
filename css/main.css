@@ -57,3 +57,13 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: #888;
 }
+
+.dark .dark-bg-admin-primary {
+    background-color: #333333;
+    color: white;
+}
+
+.dark .dark-bg-admin-secondary {
+    background-color: #282d35;
+    color: white;
+}

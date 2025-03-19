@@ -124,7 +124,7 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<div class="w-4xl mx-auto bg-[#f7f4ed] dark:bg-stone-900 border border-gray-300 dark:border-stone-600 shadow-lg rounded-lg p-6 mt-6">
+<div class="w-4xl mx-auto bg-[#f7f4ed] dark:bg-stone-900 border border-gray-500  dark:border-stone-600 shadow-lg rounded-lg p-6 mt-6">
     <h1 class="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-4">Manage Posts</h1>
 
     <!-- <p class="text-gray-700 text-sm mb-4">
@@ -144,14 +144,14 @@ $('.search-form form').submit(function(){
             'id' => 'post-grid',
             'dataProvider' => $model->search(),
             'filter' => $model,
-            'itemsCssClass' => 'w-full border border-gray-300 text-gray-500 rounded-lg table-fixed',
+            'itemsCssClass' => 'w-full border border-gray-500 text-gray-500 rounded-lg table-fixed',
             'htmlOptions' => array('class' => 'shadow-lg rounded-lg'),
-            'rowCssClass' => array('bg-white', 'bg-gray-100'), // Alternating row colors
+            'rowCssClass' => array('bg-white dark-bg-admin-primary', 'bg-gray-100 dark-bg-admin-secondary'), // Alternating row colors
             'columns' => array(
                 array(
                     'name' => 'id',
                     'htmlOptions' => array(
-                        'class' => 'px-4 py-3 border-b border-gray-300 text-center font-medium',
+                        'class' => 'px-4 py-3 border-b border-gray-500 text-center font-medium',
                         'style' => 'width: 80px; min-width: 60px; max-width: 100px;', // Ensures compact ID column
                     ),
                 ),
@@ -159,25 +159,25 @@ $('.search-form form').submit(function(){
                     'name' => 'title',
                     'type' => 'raw',
                     'value' => 'CHtml::link(CHtml::encode($data->title), $data->url, array("class"=>"text-blue-500 hover:underline"))',
-                    'htmlOptions' => array('class' => 'px-4 py-3 border-b border-gray-300 font-medium'),
+                    'htmlOptions' => array('class' => 'px-4 py-3 border-b border-gray-500  font-medium'),
                 ),
                 array(
                     'name' => 'status',
                     'value' => 'Lookup::item("PostStatus", $data->status)',
                     'filter' => Lookup::items('PostStatus'),
-                    'htmlOptions' => array('class' => 'px-4 py-3 border-b border-gray-300 font-semibold text-center'),
+                    'htmlOptions' => array('class' => 'px-4 py-3 border-b border-gray-500  font-semibold text-center'),
                     'cssClassExpression' => '$data->status === 3 ? "text-gray-500" : ($data->status === 2 ? "text-green-500" : "text-yellow-500")',
                 ),
                 array(
                     'name' => 'create_time',
                     'value' => 'date("F d, Y h:i A", $data->create_time)',
                     'filter' => false,
-                    'htmlOptions' => array('class' => 'px-4 py-3 border-b border-gray-300 text-sm text-center'),
+                    'htmlOptions' => array('class' => 'px-4 py-3 border-b border-gray-500  text-sm text-center'),
                 ),
                 array(
                     'header' => 'Actions',
                     'class' => 'CButtonColumn',
-                    'htmlOptions' => array('class' => 'px-4 py-3 border-b border-gray-300 text-center space-x-5'),
+                    'htmlOptions' => array('class' => 'px-4 py-3 border-b border-gray-500  text-center space-x-5'),
                     'template' => '{update} {delete}',
                     'buttons' => array(
                         'update' => array(
