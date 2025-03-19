@@ -59,7 +59,7 @@ $this->breadcrumbs=array(
 </div> -->
 
 
-<div class="w-3xl mx-auto bg-[#fffef7] dark:bg-stone-800 p-6 rounded-lg shadow-md border border-gray-300 dark:border-gray-700">
+<div class="w-3xl mx-auto bg-[#fffef7] dark:bg-stone-900 p-6 rounded-lg shadow-md border border-gray-300 dark:border-gray-700">
     <!-- Post Author & Date -->
     <div class="flex items-center space-x-3 mb-4">
         <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/default-avatar.jpg" class="w-12 h-12 rounded-full border border-gray-300" alt="Author">

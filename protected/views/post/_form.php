@@ -27,7 +27,7 @@
     <div class="mb-4">
         <?php echo $form->labelEx($model, 'title', array('class' => 'block text-gray-700 dark:text-gray-200 font-medium mb-1 dark:text-gray-200')); ?>
         <?php echo $form->textField($model, 'title', array(
-            'class' => 'w-full border border-gray-400 dark:border-stone-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 dark:bg-gray-800 dark:text-white',
+            'class' => 'w-full border border-gray-400 dark:border-stone-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 dark:bg-stone-800 dark:text-white',
             'maxlength' => 128
         )); ?>
         <?php echo $form->error($model, 'title', array('class' => 'text-red-500 text-sm')); ?>
@@ -37,7 +37,7 @@
     <div class="mb-4">
         <?php echo $form->labelEx($model, 'content', array('class' => 'block text-gray-700 font-medium mb-1 dark:text-gray-200')); ?>
         <?php echo $form->textArea($model, 'content', array(
-            'class' => 'w-full border border-gray-400 dark:border-stone-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 dark:bg-gray-800 dark:text-white',
+            'class' => 'w-full border border-gray-400 dark:border-stone-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 dark:bg-stone-800 dark:text-white',
             'rows' => 6
         )); ?>
         <?php echo $form->error($model, 'content', array('class' => 'text-red-500 text-sm')); ?>
@@ -47,7 +47,7 @@
     <div class="mb-4">
         <?php echo $form->labelEx($model, 'tags', array('class' => 'block text-gray-700 font-medium mb-1 dark:text-gray-200')); ?>
         <?php echo $form->textArea($model, 'tags', array(
-            'class' => 'w-full border border-gray-400 dark:border-stone-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 dark:bg-gray-800 dark:text-white',
+            'class' => 'w-full border border-gray-400 dark:border-stone-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 dark:bg-stone-800 dark:text-white',
             'rows' => 2
         )); ?>
         <?php echo $form->error($model, 'tags', array('class' => 'text-red-500 text-sm')); ?>
@@ -57,7 +57,7 @@
     <div class="mb-4">
         <?php echo $form->labelEx($model, 'status', array('class' => 'block text-gray-700 font-medium mb-1 dark:text-gray-200')); ?>
         <?php echo $form->dropDownList($model, 'status', Lookup::items('PostStatus'), array(
-            'class' => 'w-full border border-gray-400 dark:border-stone-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 dark:bg-gray-800 dark:text-white'
+            'class' => 'w-full border border-gray-400 dark:border-stone-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 dark:bg-stone-800 dark:text-white'
         )); ?>
         <?php echo $form->error($model, 'status', array('class' => 'text-red-500 text-sm')); ?>
     </div>

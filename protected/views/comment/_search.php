@@ -76,45 +76,45 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
             <?php echo $form->label($model, 'id', array('class' => 'block text-sm font-medium text-gray-700 dark:text-gray-300')); ?>
-            <?php echo $form->textField($model, 'id', array('class' => 'w-full px-4 py-2 border rounded-lg bg-white dark:bg-gray-800 dark:text-white')); ?>
+            <?php echo $form->textField($model, 'id', array('class' => 'w-full px-4 py-2 border dark:border-stone-700 rounded-lg bg-white dark:bg-gray-800 dark:text-white')); ?>
         </div>
 
         <div>
             <?php echo $form->label($model, 'content', array('class' => 'block text-sm font-medium text-gray-700 dark:text-gray-300')); ?>
-            <?php echo $form->textArea($model, 'content', array('rows' => 4, 'class' => 'w-full px-4 py-2 border rounded-lg bg-white dark:bg-gray-800 dark:text-white')); ?>
+            <?php echo $form->textArea($model, 'content', array('rows' => 4, 'class' => 'w-full px-4 py-2 border rounded-lg bg-white dark:bg-gray-800 dark:text-white dark:border-stone-700')); ?>
         </div>
 
         <div>
             <?php echo $form->label($model, 'status', array('class' => 'block text-sm font-medium text-gray-700 dark:text-gray-300')); ?>
             <?php //echo $form->textField($model, 'status', array('class' => 'w-full px-4 py-2 border rounded-lg bg-white dark:bg-gray-800 dark:text-white')); ?>
             <?php echo $form->dropDownList($model, 'status', Lookup::items('CommentStatus'), array(
-                'class' => 'w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 bg-white dark:bg-gray-800 dark:text-white'
+                'class' => 'w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 bg-white dark:bg-gray-800 dark:text-white dark:border-stone-700'
             )); ?>
         </div>
 
         <div>
             <?php echo $form->label($model, 'create_time', array('class' => 'block text-sm font-medium text-gray-700 dark:text-gray-300')); ?>
-            <?php echo $form->textField($model, 'create_time', array('class' => 'w-full px-4 py-2 border rounded-lg bg-white dark:bg-gray-800 dark:text-white')); ?>
+            <?php echo $form->textField($model, 'create_time', array('class' => 'w-full px-4 py-2 border rounded-lg bg-white dark:bg-gray-800 dark:text-white dark:border-stone-700')); ?>
         </div>
 
         <div>
             <?php echo $form->label($model, 'author', array('class' => 'block text-sm font-medium text-gray-700 dark:text-gray-300')); ?>
-            <?php echo $form->textField($model, 'author', array('size' => 60, 'maxlength' => 128, 'class' => 'w-full px-4 py-2 border rounded-lg bg-white dark:bg-gray-800 dark:text-white')); ?>
+            <?php echo $form->textField($model, 'author', array('size' => 60, 'maxlength' => 128, 'class' => 'w-full px-4 py-2 border rounded-lg bg-white dark:bg-gray-800 dark:text-white dark:border-stone-700')); ?>
         </div>
 
         <div>
             <?php echo $form->label($model, 'email', array('class' => 'block text-sm font-medium text-gray-700 dark:text-gray-300')); ?>
-            <?php echo $form->textField($model, 'email', array('size' => 60, 'maxlength' => 128, 'class' => 'w-full px-4 py-2 border rounded-lg bg-white dark:bg-gray-800 dark:text-white')); ?>
+            <?php echo $form->textField($model, 'email', array('size' => 60, 'maxlength' => 128, 'class' => 'w-full px-4 py-2 border rounded-lg bg-white dark:bg-gray-800 dark:text-white dark:border-stone-700')); ?>
         </div>
 
         <div>
             <?php echo $form->label($model, 'url', array('class' => 'block text-sm font-medium text-gray-700 dark:text-gray-300')); ?>
-            <?php echo $form->textField($model, 'url', array('size' => 60, 'maxlength' => 128, 'class' => 'w-full px-4 py-2 border rounded-lg bg-white dark:bg-gray-800 dark:text-white')); ?>
+            <?php echo $form->textField($model, 'url', array('size' => 60, 'maxlength' => 128, 'class' => 'w-full px-4 py-2 border rounded-lg bg-white dark:bg-gray-800 dark:text-white dark:border-stone-700')); ?>
         </div>
 
         <div>
             <?php echo $form->label($model, 'post_id', array('class' => 'block text-sm font-medium text-gray-700 dark:text-gray-300')); ?>
-            <?php echo $form->textField($model, 'post_id', array('class' => 'w-full px-4 py-2 border rounded-lg bg-white dark:bg-gray-800 dark:text-white')); ?>
+            <?php echo $form->textField($model, 'post_id', array('class' => 'w-full px-4 py-2 border rounded-lg bg-white dark:bg-gray-800 dark:text-white dark:border-stone-700')); ?>
         </div>
     </div>
 
