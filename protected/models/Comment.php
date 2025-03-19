@@ -61,6 +61,8 @@ class Comment extends CActiveRecord
 			array('author, email, url', 'length', 'max'=>128),
 			array('email','email'),
 			array('url','url'),
+			array('status', 'numerical', 'integerOnly'=>true),
+			array('status', 'in', 'range'=>array(1,2)),
 		);
 	}
 

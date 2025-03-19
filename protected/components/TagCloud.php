@@ -32,17 +32,22 @@ class TagCloud extends CPortlet
 
         echo '<div class="flex flex-wrap gap-2">'; // Flexbox container for better spacing
         foreach ($tags as $tag => $data) {
-            $link = CHtml::link(
-                CHtml::encode($tag),
-                array('post/index', 'tag' => $tag),
-            );
 
-            echo CHtml::tag('span', array(
-                'class' => 'px-3 py-1 rounded-full transition-all 
-                bg-stone-800 hover:bg-stone-700 text-white hover:text-gray-200
-                dark:bg-[#f7f4ed] dark:hover:bg-[#e0dccb] dark:text-black dark:hover:text-stone-800',
-                'style' => "font-size: {$data['weight']}px;", // Adjust font size based on weight
-            ), $link . " ({$data['frequency']})") . "\n"; // Append frequency in parentheses
+            $publishedPostCount = Post::model()->countByAttributes(['status' => Post::STATUS_PUBLISHED], 'tags LIKE :tag', ['tag' => "$tag"]);
+
+            if ($publishedPostCount > 0) {
+                $link = CHtml::link(
+                    CHtml::encode($tag),
+                    array('post/index', 'tag' => $tag),
+                );
+    
+                echo CHtml::tag('span', array(
+                    'class' => 'px-3 py-1 rounded-full transition-all 
+                    bg-stone-800 hover:bg-stone-700 text-white hover:text-gray-200
+                    dark:bg-[#f7f4ed] dark:hover:bg-[#e0dccb] dark:text-black dark:hover:text-stone-800',
+                    'style' => "font-size: {$data['weight']}px;", // Adjust font size based on weight
+                ), $link . " ({$data['frequency']})") . "\n"; // Append frequency in parentheses
+            }
         }
         echo '</div>';
     }

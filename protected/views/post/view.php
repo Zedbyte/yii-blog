@@ -76,16 +76,18 @@ $this->breadcrumbs=array(
     </div>
 
     <!-- Comment Input -->
-    <div class="mt-6">
-        <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-2">Leave a Comment</h3>
-        <?php if(Yii::app()->user->hasFlash('commentSubmitted')): ?>
-            <div class="p-3 bg-green-100 text-green-700 rounded-md">
-                <?php echo Yii::app()->user->getFlash('commentSubmitted'); ?>
-            </div>
-        <?php else: ?>
-            <?php $this->renderPartial('/comment/_form', array('model' => $comment)); ?>
-        <?php endif; ?>
-    </div>
+    <?php if (Yii::app()->user->isGuest) : ?>
+        <div class="mt-6">
+            <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-2">Leave a Comment</h3>
+            <?php if(Yii::app()->user->hasFlash('commentSubmitted')): ?>
+                <div class="p-3 bg-green-100 text-green-700 rounded-md">
+                    <?php echo Yii::app()->user->getFlash('commentSubmitted'); ?>
+                </div>
+            <?php else: ?>
+                <?php $this->renderPartial('/comment/_form', array('model' => $comment)); ?>
+            <?php endif; ?>
+        </div>
+    <?php endif; ?>
 
     <!-- Comments Section -->
     <div class="mt-6">
