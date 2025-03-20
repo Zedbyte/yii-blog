@@ -97,41 +97,41 @@ $('.search-form form').submit(function(){
             'id' => 'comment-grid',
             'dataProvider' => $model->search(),
             'filter' => $model,
-            'itemsCssClass' => 'w-full border border-gray-300 text-gray-500 rounded-lg table-fixed',
+            'itemsCssClass' => 'w-full border border-gray-500 text-gray-500 rounded-lg table-fixed',
             'htmlOptions' => array('class' => 'shadow-lg rounded-lg'), 
             'rowCssClass' => array('bg-white dark-bg-admin-primary', 'bg-gray-100 dark-bg-admin-secondary'), // Alternating row colors
             'columns' => array(
                 array(
                     'name' => 'id',
-                    'htmlOptions' => array('class' => 'px-4 py-3 border-b border-gray-300 text-center font-medium'),
+                    'htmlOptions' => array('class' => 'px-4 py-3 border-b border-gray-500 text-center font-medium'),
                 ),
                 array(
                     'name' => 'content',
                     'type' => 'raw',
                     'value' => 'CHtml::encode($data->content)',
-                    'htmlOptions' => array('class' => 'px-4 py-3 border-b border-gray-300'),
+                    'htmlOptions' => array('class' => 'px-4 py-3 border-b border-gray-500'),
                 ),
                 array(
                     'name' => 'status',
                     'value' => 'Lookup::item("CommentStatus", $data->status)',
                     'filter' => Lookup::items('CommentStatus'),
-                    'htmlOptions' => array('class' => 'px-4 py-3 border-b border-gray-300 font-semibold text-center'),
+                    'htmlOptions' => array('class' => 'px-4 py-3 border-b border-gray-500 font-semibold text-center'),
                     'cssClassExpression' => '$data->status === 3 ? "text-gray-500" : ($data->status === 2 ? "text-green-600" : "text-yellow-600")',
                 ),
                 array(
                     'name' => 'create_time',
                     'value' => 'date("F d, Y h:i A", $data->create_time)',
                     'filter' => false,
-                    'htmlOptions' => array('class' => 'px-4 py-3 border-b border-gray-300 text-sm text-center'),
+                    'htmlOptions' => array('class' => 'px-4 py-3 border-b border-gray-500 text-sm text-center'),
                 ),
                 array(
                     'name' => 'author',
-                    'htmlOptions' => array('class' => 'px-4 py-3 border-b border-gray-300 font-medium text-center'),
+                    'htmlOptions' => array('class' => 'px-4 py-3 border-b border-gray-500 font-medium text-center'),
                 ),
                 array(
                     'header' => 'Actions',
                     'class' => 'CButtonColumn',
-                    'htmlOptions' => array('class' => 'px-4 py-3 border-b border-gray-300 text-center space-x-5'),
+                    'htmlOptions' => array('class' => 'px-4 py-3 border-b border-gray-500 text-center space-x-5'),
                     'template' => '{update} {delete}',
                     'buttons' => array(
                         'update' => array(
